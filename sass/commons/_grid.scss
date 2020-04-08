@@ -59,7 +59,8 @@ $xlarge-screen: 1360px;
 }
 /* Center and max-width the content */
 .container {
-  max-width: 296px;
+  width: 84%;
+  max-width: 480px;
   margin: 0 auto;
   @include media(tablet) {
     max-width: 592px;

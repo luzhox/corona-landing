@@ -1911,7 +1911,8 @@ body .light {
 
 /* Center and max-width the content */
 .container {
-  max-width: 296px;
+  width: 84%;
+  max-width: 480px;
   margin: 0 auto;
 }
 @media only screen and (min-width: 768px) {
