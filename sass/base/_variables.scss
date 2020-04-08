@@ -1,0 +1,60 @@
+// Variables
+//
+
+// Spacing
+//
+
+$spacer:                     1rem !default;
+$spacer-x:                   $spacer !default;
+$spacer-y:                   $spacer !default;
+$border-width:               .0625rem !default;
+
+// Mobile Breakpoints
+$mobile-screen: 280px;
+$small-screen:  425px;
+$medium-screen: 1023px;
+
+
+@include media(mobile) {
+    .hide-mobile {
+        display: none !important;
+    }
+    .hide-tablet-on-down {
+        display: none !important;
+    }
+    .hide-tablet-on-up{
+        display: block!important;
+    }
+    .only-desk{
+        display: none;
+    }
+    .only-mob{
+        display: block;
+    }
+  }
+  
+  @include media(tablet) {
+  
+    .hide-tablet-on-up {
+        display: none!important;
+    }
+    .hide-tablet-on-down {
+        display: none !important;
+    }
+    .hide-mobile {
+        display: block!important;
+    }
+  
+  }
+  
+  @include media(desktop) {
+    .hide-desktop {
+        display: none !important;
+    }
+    .hide-tablet-on-down {
+        display: block !important;
+    }
+  }
+
+  //Color Modal
+$overlay:rgba(73, 80, 102, 0.8);

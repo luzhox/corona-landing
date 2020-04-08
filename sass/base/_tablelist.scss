@@ -1,0 +1,267 @@
+$parent-class: ".table-list";
+$Titulo-Regular: "Lato", sans-serif;
+$Parrafo: "Roboto", sans-serif;
+$Defeated-Color: #ff0000;
+
+.no-padding-left {
+  padding-left: 0px;
+  .no-margin-bottom {
+    margin-bottom: 0px;
+  }
+  .padding-bottom {
+    padding-bottom: 23.5px;
+  }
+  .margin-divider {
+    margin-top: 23.5px;
+    margin-bottom: 32px;
+  }
+  .margin-bottom {
+    margin-bottom: 32px;
+  }
+}
+.scroll-x {
+  overflow-x: auto;
+}
+
+#{$parent-class} {
+  .rotate {
+    transform: rotate(180deg);
+  }
+  .dots {
+    cursor: pointer;
+  }
+  .dots:after {
+    content: "\2807";
+    font-size: 18px;
+    color: #494f66;
+  }
+  .dots-mobile{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  .table-divider {
+    border-top: 1px solid #eee;
+    margin: 0px;
+  }
+  .dots-options {
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 2px 12px rgba(63, 76, 130, 0.1), 0px 0px 4px rgba(77, 103, 205, 0.1);
+    border-radius: 0px 0px 4px 4px;
+    width: 233px;
+    color: #676f8f;
+    right: 52px;
+    display: none;
+    cursor: pointer;
+
+    &.show-dots {
+      display: block;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0px;
+      padding: 0px;
+      li {
+        font-size: 16px;
+        padding: 19px 16px;
+        font-family: "lato";
+        a{
+          color: #676F8F;
+        }
+      }
+    }
+  }
+  .table-list-desktop {
+    th {
+      background-color: $Blank-3;
+      padding-top: 13px;
+      padding-bottom: 13px;
+      border-bottom: 0;
+
+      span {
+        text-transform: uppercase;
+        font-size: 12px;
+        color: $Texto;
+        font-family: $Titulo-Regular;
+        letter-spacing: 0.8px;
+      }
+
+      .lowercase {
+        text-transform: inherit;
+      }
+
+      span.sortable:after,
+      span.asc:after {
+        content: url(/etc/designs/rimac/src/images/icons/down-arrow.svg);
+        margin-left: 8px;
+        vertical-align: text-bottom;
+      }
+
+      span.desc:after {
+        content: url(/etc/designs/rimac/src/images/icons/up-arrow.svg);
+        margin-left: 8px;
+        vertical-align: text-bottom;
+      }
+
+      span.sortable:hover {
+        cursor: pointer;
+      }
+
+      &:first-child {
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+      }
+
+      &:last-child {
+        border-bottom-right-radius: 8px;
+        border-top-right-radius: 8px;
+      }
+    }
+
+    tbody {
+      tr {
+        &:first-child {
+          td {
+            border-top: 0;
+          }
+        }
+
+        td {
+          font-size: 12px;
+          color: $Texto;
+          font-family: $Parrafo;
+          font-weight: 300;
+          text-transform: capitalize;
+          padding-top: 15px;
+          padding-bottom: 15px;
+          line-height: inherit;
+
+          &.finished {
+            font-family: $Titulo-Regular;
+            font-weight: 500;
+            color: $Verde;
+            display: -moz-box;
+            display: -webkit-box;
+          }
+
+          &.in-progress {
+            font-family: $Titulo-Regular;
+            font-weight: 500;
+            color: $Naranja;
+            display: -moz-box;
+            display: -webkit-box;
+          }
+
+          &.closed {
+            font-family: $Titulo-Regular;
+            font-weight: 500;
+            color: $Grey-3;
+            display: -moz-box;
+            display: -webkit-box;
+          }
+
+          &.in-defeated {
+            font-family: $Titulo-Regular;
+            font-weight: 500;
+            color: $Defeated-Color;
+            display: -moz-box;
+            display: -webkit-box;
+          }
+
+          &.descripcionProducto, &.nombreProducto {
+            font-size: 14px;
+            font-weight: 500;
+          }
+          &.padding-left-20 {
+            padding-left:20px;
+          }
+        }
+      }
+    }
+  }
+
+  .table-list-mobile {
+    .detail {
+      margin-bottom: 16px;
+    }
+
+    h5 {
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: 0;
+      font-family: $Titulo-Regular;
+      color: $Texto;
+      text-transform: capitalize;
+    }
+
+    p {
+      margin: 0;
+      color: $Texto;
+      span {
+        font-weight: 500;
+      }
+      &.procedure-type {
+        font-weight: 500;
+      }
+    }
+
+    span {
+      &.finished {
+        color: $Verde;
+      }
+      &.in-progress {
+        color: $Naranja;
+      }
+      &.closed {
+        color: $Grey-3;
+      }
+      &.in-defeated {
+        color: $Defeated-Color;
+      }
+    }
+  }
+
+  .no-results {
+    h5 {
+      font-family: $Titulo-Regular;
+      color: $Texto;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .filters {
+    .notification {
+      border: 1px solid $Input-Border;
+      border-radius: 4px;
+      span {
+        font-size: 12px;
+        font-family: $Titulo-Regular;
+      }
+      padding-left: 10px;
+      .close-btn {
+        display: none;
+      }
+    }
+    .react-tags {
+      ul {
+        li {
+          border-radius: 4px;
+          background-color: $Blank3;
+          font-size: 14px;
+          font-family: $Titulo-Regular;
+          color: $Texto;
+          a {
+            font-size: 14px;
+            color: $Texto;
+          }
+        }
+      }
+      input {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,177 @@
+.title {
+  &-upper {
+    text-transform: uppercase;
+  }
+  &-01 {
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -0.6px;
+    color: $gray;
+    font-weight: 300;
+    font-family: $lato;
+    &.red {
+      b {
+        color: $red;
+      }
+    }
+    b {
+      font-weight: 400;
+    }
+    strong {
+      font-weight: 400;
+    }
+  }
+  &-02 {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+    color: $gray;
+    font-weight: 300;
+    font-family: $lato;
+    &.red {
+      b {
+        color: $red;
+      }
+    }
+    b {
+      font-weight: 400;
+    }
+    strong {
+      font-weight: 400;
+    }
+  }
+  &-03 {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+    color: $gray;
+    font-weight: 300;
+    font-family: $lato;
+    &.red {
+      b {
+        color: $red;
+      }
+    }
+    b {
+      font-weight: 400;
+    }
+    strong {
+      font-weight: 400;
+    }
+  }
+  &-04 {
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -0.6px;
+    color: $gray;
+    font-weight: 300;
+    font-family: $lato;
+    b {
+      font-weight: 400;
+    }
+    strong {
+      font-weight: 400;
+    }
+  }
+
+  &-05 {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.2px;
+    color: $gray;
+    font-weight: 300;
+    font-family: $lato;
+    b {
+      font-weight: 400;
+    }
+    strong {
+      font-weight: 400;
+    }
+  }
+  &-06 {
+    font-size: 20px;
+    line-height: 28px;
+    color: $gray;
+    font-weight: 300;
+    font-family: $lato;
+    b {
+      font-weight: 400;
+    }
+    strong {
+      font-weight: 400;
+    }
+    &--red {
+      b,
+      strong {
+        color: $red;
+      }
+    }
+  }
+  &-07 {
+    font-size: 16px;
+    line-height: 24px;
+    color: $gray;
+    font-weight: 400;
+    font-family: $lato;
+  }
+  &-08 {
+    font-size: 12px;
+    line-height: 16px;
+    color: $gray;
+    font-weight: 400;
+    font-family: $lato;
+    b {
+      font-weight: 700;
+      letter-spacing: 0.6px;
+    }
+    strong {
+      font-weight: 700;
+      letter-spacing: 0.6px;
+    }
+  }
+  &-09 {
+    font-size: 10px;
+    line-height: 16px;
+    color: $gray;
+    font-weight: 400;
+    font-family: $lato;
+    b {
+      font-weight: 700;
+      letter-spacing: 0.8px;
+    }
+    strong {
+      font-weight: 700;
+      letter-spacing: 0.8px;
+    }
+  }
+
+  @include media(tablet) {
+    &-01 {
+      font-size: 56px;
+      line-height: 68px;
+    }
+    &-02 {
+      font-size: 48px;
+      line-height: 60px;
+    }
+    &-03 {
+      font-size: 40px;
+      line-height: 48px;
+    }
+    &-04 {
+      font-size: 36px;
+      line-height: 48px;
+    }
+
+    &-05 {
+      font-size: 28px;
+      line-height: 36px;
+    }
+  }
+  &-red {
+    b,
+    strong {
+      color: $red;
+    }
+  }
+}

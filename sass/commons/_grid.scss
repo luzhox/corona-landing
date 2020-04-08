@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  box-shadow: none;
+  font-family: $lato;
+}
+//Width column
+@function col($columns, $total) {
+  @return (100% / $total) * $columns;
+}
+
+//Breakpoints
+$xsmall-screen: 320px;
+$small-screen: 480px;
+$medium-screen: 768px;
+$large-screen: 1024px;
+$xlarge-screen: 1360px;
+
+//Width column
+@function col($columns, $total) {
+  @return (100% / $total) * $columns;
+}
+
+@mixin media($types...) {
+  @each $type in $types {
+    //only mobile or mobile down
+    @if $type == mobile {
+      @media only screen and (max-width: $medium-screen - 1) {
+        @content;
+      }
+    }
+    @if $type == mobile-tablet {
+      @media only screen and (min-width: $small-screen) {
+        @content;
+      }
+    }
+    //tableb up
+    @if $type == tablet {
+      @media only screen and (min-width: $medium-screen) {
+        @content;
+      }
+    }
+
+    //desktopmini up
+    @if $type == desktopmini {
+      @media only screen and (min-width: $large-screen) {
+        @content;
+      }
+    }
+    //desktop up
+    @if $type == desktop {
+      @media only screen and (min-width: $xlarge-screen) {
+        @content;
+      }
+    }
+  }
+}
+/* Center and max-width the content */
+.container {
+  max-width: 296px;
+  margin: 0 auto;
+  @include media(tablet) {
+    max-width: 592px;
+  }
+  @include media(desktopmini) {
+    max-width: 888px;
+  }
+  @include media(desktop) {
+    max-width: 1184px;
+  }
+}

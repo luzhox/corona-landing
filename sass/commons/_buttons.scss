@@ -1,0 +1,182 @@
+button {
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    outline: 0px;
+    background: transparent;
+    box-shadow: none;
+}
+.btn-style {
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: none;
+    font-family: $lato;
+    border-radius: 8px;
+    display: inline-block;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    padding: 15px 32px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    min-width: 140px;
+    outline: 0;
+    box-shadow: none;
+
+    @include media(tablet) {
+        width: auto;
+    }
+}
+
+.btn {
+    width: 100%;
+
+    &__primary {
+        @extend .btn-style;
+        background-color: $red;
+        color: white;
+
+        &:hover {
+            background: $red2;
+            box-shadow: 0px 4px 10px rgba(20, 43, 127, 0.25);
+        }
+
+        &--border {
+            @extend .btn-style;
+            border: 1px solid $red;
+            color: $red;
+            padding: 16px 32px;
+            background-color: transparent;
+
+            &:hover {
+                background-color: transparent;
+                box-shadow: none;
+                border: 2px solid $red;
+                padding: 16px 32px;
+                margin: -1px;
+            }
+        }
+
+        .button-arrow {
+            position: relative;
+            bottom: 1px;
+        }
+    }
+
+    &__primary:disabled,
+    &__primary--border:disabled {
+        background-color: #edeff5;
+        border: 1px solid #edeff5;
+        color: #d4d5e8;
+
+        &:hover {
+            box-shadow: none;
+        }
+    }
+
+    &__secondary {
+        @extend .btn-style;
+        background-color: white;
+        color: $red;
+        padding: 16px 32px;
+
+        &:hover {
+            box-shadow: 0px 6px 8px rgba(208, 39, 47, 0.5);
+        }
+
+        &:disabled {
+            @extend .btn-style;
+            background-color: #fc4e55;
+            color: #ef3340;
+
+            &:hover {
+                box-shadow: none;
+            }
+        }
+
+        &--border {
+            @extend .btn-style;
+            border: 1px solid #ffffff;
+            color: #ffffff;
+            padding: 16px 32px;
+            background-color: transparent;
+
+            &:hover {
+                box-shadow: none;
+                background-color: transparent;
+            }
+        }
+    }
+    &-verysmall {
+        padding: 12px 32px;
+    }
+    &-small {
+        padding: 10px 47px;
+    }
+    &-medium {
+        padding: 15px 32px;
+    }
+
+    &-large {
+        padding: 20px 32px;
+    }
+
+    &-left {
+        float: left;
+    }
+
+    &-right {
+        float: right;
+    }
+}
+
+.link {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    color: #939dff;
+    outline: 0;
+    box-shadow: none;
+    text-decoration: none;
+    border: none;
+    width: auto;
+    background: none;
+    cursor: pointer;
+
+    &.large {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        color: $acian;
+        text-decoration: none;
+        text-transform: initial;
+    }
+
+    &.medium {
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.6px;
+        text-transform: uppercase;
+        color: $acian;
+        text-decoration: none;
+        &.renovation {
+            margin-left: 8px;
+            @include media(mobile) {
+                margin-left: 0;
+                float: left;
+                margin-top: 16px;
+            }
+        }
+    }
+    &:hover {
+        color: $acian2;
+    }
+}

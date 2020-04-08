@@ -1,0 +1,18 @@
+{
+  "name": "base",
+  "version": "1.0.0",
+  "description": "Sass Compiler for AEM",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch main.scss -o ../../clientlibs/base/css/"
+  },
+  "keywords": [
+    "sass"
+  ],
+  "author": "JDR",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.10.0"
+  }
+}

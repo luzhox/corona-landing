@@ -1,0 +1,597 @@
+
+/** FORMS **/
+$Input-Border: $Texto-Inhabilitado;
+$Input-Border-hover: $Texto;
+$Input-Border-focussed: $Texto;
+$Input-Border-error: $Rojo-Rimac-hover;
+$Input-Border-disabled:$Gray-5;
+
+/** Check & Radio **/
+$Checkbox-unselected: $Texto-Inhabilitado;
+$Checkbox-selected: $Verde;
+$Checkbox-border-error: $Rojo-Rimac-Linea2;
+$Checkbox-checkmark: $Blank;
+
+$parent-class: ".form-rimac";
+
+//CHECKBOX CSS
+$md-checkbox-checked-color: $Blank;
+$md-checkbox-border-color: rgba(0, 0, 0, 0.35);
+$md-checkbox-border-color-disabled: rgba(0, 0, 0, 0.26);
+$md-checkbox-checked-color-disabled: rgba(0, 0, 0, 0.26);
+
+$md-checkbox-margin: 0;
+$md-checkbox-size: 1.5em;
+$md-checkbox-padding: .200em;
+$md-checkbox-border-width: 1px;
+$md-checkbox-border-radius: 0.225em;
+$md-checkmark-width: 0.200em;
+$md-checkbox-label-padding: .75em;
+
+#{$parent-class}{
+    textarea{
+        resize: none;
+        width: 100%;
+        height: 170px;
+        outline: none;
+        padding-top: 25px;
+        padding-left: 10px;
+    }
+
+    .form-dni{
+        .dni-number{
+
+
+            &.dni,
+            &.extranjeria{
+                display: none;
+            }
+        }
+    }
+
+   @mixin chevron-up{
+      border: none;
+      background: url(/etc/designs/rimac/src/images/icons/chevron-up-red.svg);
+      background-repeat: no-repeat;
+      background-position-y: center;
+      width: 8px;
+      height: 5px;
+      margin-left: 5px;
+   }
+
+   @mixin chevron-down{
+      @include chevron-up;
+      -webkit-transform: rotate(180deg);     /* Chrome and other webkit browsers */
+      -moz-transform: rotate(180deg);        /* FF */
+      -o-transform: rotate(180deg);          /* Opera */
+      -ms-transform: rotate(180deg);         /* IE9 */
+      transform: rotate(180deg);             /* W3C compliant browsers */
+   }
+
+    // Select 
+    select {
+        height: 56px;
+        width: 100%;
+        border: 1px solid $Input-Border;
+        padding: 0px;
+        padding-left: 18px;
+        padding-right: 18px;
+        padding-top: 10px;
+        font-family: $Titulo-Regular;
+        font-size: 16px;
+        line-height: 16px;
+        appearance: none;
+        -webkit-appearance:none;
+        -moz-appearance: none;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        &:active, &:focus {
+            color: $Texto;
+            border: 1px solid $Input-Border-hover;
+            box-shadow: none;
+            -webkit-box-shadow: none;
+        }
+        &:valid {
+            color: $Texto;
+            border: 1px solid $Input-Border;
+        }
+        &.error{
+          border: 1px solid $Input-Border-error;
+        }
+        &::-ms-expand {
+            display: none;
+        }
+        &.conversational{
+            border: none;
+            border-radius: 0px;
+            border-bottom: 1px solid $Input-Border;
+            box-shadow: none;
+            -webkit-box-shadow: none;
+            &:active, &:focus{
+                color: $Texto;
+                border-bottom: 1px solid $Input-Border-focussed;
+            }
+            &:valid {
+                color: $Texto;
+                border-bottom: 1px solid $Input-Border;
+            }
+            &.error{
+                border-bottom: 1px solid $Input-Border-error;
+            }
+        }
+
+        option{
+          color: $Texto-Placeholder;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          width: 100px;
+          &:hover{
+            color: $Input-Border-hover;
+          }
+        }
+    }
+
+    .select-icon {
+        position: absolute;
+        top:28px;
+        right: 28px;
+        @include chevron-down;
+    }
+
+    // Input   
+    input[type=text], input[type=password], input[type=number], input[type=tel], input[type=email] {       
+        height: 56px;
+        width: 100%;
+        border: 1px solid $Input-Border;
+        padding: 16px 16px;
+        font-family: $Titulo-Regular;
+        font-size: 16px;
+        line-height: 16px;
+        padding-bottom: 0px;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        &:hover{
+            border: 1px solid $Input-Border-hover;
+        }
+        &:active, &:focus{
+            color: $Texto;
+            border: 1px solid $Input-Border-focussed;
+        }
+        // &:valid {
+        //     color: $Texto;
+        //     border: 1px solid $Input-Border;
+        // }
+        &.error{
+            border: 1px solid $Rojo-Rimac-Linea2;
+        }
+        &::-ms-reveal 
+        {
+            display: none;
+        }
+        &::-webkit-credentials-auto-fill-button {
+            visibility: hidden;
+            pointer-events: none;
+            position: absolute;
+            right: 0;
+        }
+        &.conversational{
+            border: none;
+            border-radius: 0px;
+            border-bottom: 1px solid $Input-Border;
+            box-shadow: none;
+            -webkit-box-shadow: none;
+            &:active, &:focus{
+                color: $Texto;
+                border-bottom: 1px solid $Input-Border-focussed;
+            }
+            &:valid {
+                color: $Texto;
+                border-bottom: 1px solid $Input-Border;
+            }
+            &.error{
+                border-bottom: 1px solid $Rojo-Rimac-Linea2;
+            }
+        }
+        &.no-border-left {
+            border-left: none;
+        }
+        &.right-border-radius {
+            border-radius: 0px 4px 4px 0px;
+        }
+    }
+
+    .input-placeholder {
+        font-size: 16px;
+        line-height: 16px;
+        left: 32px;
+        top: 20px;
+        font-family: $Titulo-Regular;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        color: $Texto-Placeholder;
+        background: $white;
+        -webkit-transition: transform 500ms cubic-bezier(0.4,0,0.2,1),opacity 500ms cubic-bezier(0.4,0,0.2,1);
+        transition: transform 500ms cubic-bezier(0.4,0,0.2,1),opacity 500ms cubic-bezier(0.4,0,0.2,1);
+        width: auto;
+        z-index: 0;
+        -webkit-transform-origin: bottom left;
+        transform-origin: bottom left;
+        pointer-events: none;
+        position: absolute;
+
+        .error {
+          color: $Input-Border-error;
+        }
+
+        &.v2 {
+            font-family: $Titulo;
+        }
+    }
+
+
+    // input[type=text]:not([disabled]):focus~.input-placeholder, :active~.input-placeholder,
+    // input[type=password]:not([disabled]):focus~.input-placeholder, :active~.input-placeholder,
+    // input[type=number]:not([disabled]):focus~.input-placeholder   :active~.input-placeholder,
+    // textarea:not([disabled]):focus~.input-placeholder,
+    // select:not([disabled]):focus~.input-placeholder, 
+    // :active~.input-placeholder {
+    //     -webkit-transform: scale(.75) translateY(-18px);
+    //     transform: scale(.75) translateY(-18px);
+    //     color: $Texto-Placeholder;
+    // }
+
+    input[type=text]:not([disabled]):focus~.input-placeholder, 
+    input[type=password]:not([disabled]):focus~.input-placeholder, 
+    input[type=number]:not([disabled]):focus~.input-placeholder,
+    input[type=tel]:not([disabled]):focus~.input-placeholder,
+    input[type=email]:not([disabled]):focus~.input-placeholder,  
+    textarea:not([disabled]):focus~.input-placeholder,
+    select:not([disabled]):focus~.input-placeholder {
+        -webkit-transform: scale(.75) translateY(-18px);
+        transform: scale(.75) translateY(-18px);
+        color: $Texto-Placeholder;
+    }
+
+
+    input[type=text]:not([disabled]):valid~.input-placeholder,
+    input[type=password]:not([disabled]):valid~.input-placeholder,
+    input[type=number]:not([disabled]):valid~.input-placeholder,
+    input[type=tel]:not([disabled]):valid~.input-placeholder,
+    input[type=email]:not([disabled]):valid~.input-placeholder,
+    textarea:not([disabled]):valid~.input-placeholder,
+      select:not([disabled]):valid~.input-placeholder{
+        -webkit-transform: scale(.75) translateY(-18px);
+        transform: scale(.75) translateY(-18px);
+        color: $Texto-Placeholder;
+    }
+
+    input[type=password]:not([disabled]).error~.input-placeholder,
+    input[type=number]:not([disabled]).error~.input-placeholder
+    input[type=text]:not([disabled]).error~.input-placeholder,
+    input[type=tel]:not([disabled]).error~.input-placeholder,
+    input[type=email]:not([disabled]).error~.input-placeholder,
+    textarea:not([disabled]).error~.input-placeholder,
+    select:not([disabled]).error~.input-placeholder{
+        //-webkit-transform: scale(.75) translateY(-18px);
+        //transform: scale(.75) translateY(-18px);
+        color: $Texto-Placeholder;
+    }
+    input[type=text]:not([disabled]).error~.invalid-feedback,
+    input[type=password]:not([disabled]).error~.invalid-feedback,
+    input[type=number]:not([disabled]).error~.invalid-feedback,
+    input[type=tel]:not([disabled]).error~.invalid-feedback,
+    input[type=email]:not([disabled]).error~.invalid-feedback,
+    select:not([disabled]).error~.invalid-feedback{
+        display: block;
+        color: $Input-Border-error;
+    }
+
+   input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+   }
+
+   input[type="number"] {
+      -moz-appearance: textfield;
+   }
+
+   select:not([disabled]):focus~.select-icon, :active~.select-icon{
+      -webkit-transform: rotate(0deg);     /* Chrome and other webkit browsers */
+      -moz-transform: rotate(0deg);        /* FF */
+      -o-transform: rotate(0deg);          /* Opera */
+      -ms-transform: rotate(0deg);         /* IE9 */
+      transform: rotate(0deg);
+   }
+   select:not([disabled]):valid~.select-icon{
+      -webkit-transform: rotate(180deg);     /* Chrome and other webkit browsers */
+      -moz-transform: rotate(180deg);        /* FF */
+      -o-transform: rotate(180deg);          /* Opera */
+      -ms-transform: rotate(180deg);         /* IE9 */
+      transform: rotate(180deg);             /* W3C compliant browsers */
+   }
+
+   i.eye-icon{
+      background-repeat: no-repeat;
+      cursor: pointer;
+      float: left;
+      position: absolute;
+      top: 20px;
+      right: 25px;
+      &.show-text svg {
+         path {
+               fill: $Verde
+         }
+      }
+   }
+
+   .form-group.disabled {
+     input[type=text] {
+       &[disabled] {
+         background-color: #f7f7fa;
+         border: none;
+       }
+     }
+     
+     label {
+       color: $Texto-Inhabilitado;
+     }
+   }
+
+   input[type=checkbox] {
+      position: absolute;
+      outline: none;
+      &[disabled] {
+        cursor: not-allowed;
+        + label {
+          cursor: not-allowed;
+
+          &:before {
+
+          }
+        }
+      }
+
+      &:focus {
+          + label:before {
+              outline: 5px auto -webkit-focus-ring-color;
+              outline-offset: -2px;
+          }
+      }
+
+      &:checked {
+          + label:after {
+              content: '';
+              position: absolute;
+              top: -1px;
+              left: 0;
+              line-height: 20px;
+              text-align: center;
+              $md-checkmark-size: $md-checkbox-size - 2 * $md-checkbox-padding;
+              transform: translate($md-checkbox-padding, ($md-checkbox-size / 2) - ($md-checkmark-size / 2.6)) rotate(-45deg);
+              width: $md-checkmark-size;
+              height: $md-checkmark-size / 2;
+
+              border: $md-checkmark-width solid $md-checkbox-checked-color;
+              border-top-style: none;
+              border-right-style: none;
+
+              .no-borderradius & {
+                display: none;
+              }             
+          }
+          + label:before {
+            background: #92d66f;
+          }
+      }  
+
+        .no-borderradius & {
+                background: transparent;
+                position: relative;
+        }
+
+        + label {
+            font-size: 16px;
+            font-weight: 400;
+            font-family: 'Lato',sans-serif;
+            padding-left: 35px;
+            position: relative;
+            cursor: pointer;
+            padding-top: 3px;
+            
+            .no-borderradius & {
+                padding: 0;
+            }
+
+            &:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: -1px;
+                width: $md-checkbox-size;
+                height: $md-checkbox-size;
+                background: #FFF;
+
+                border: $md-checkbox-border-width solid $md-checkbox-border-color;
+                border-radius: $md-checkbox-border-radius;
+                cursor: pointer;
+                transition: background .3s;
+
+                .no-borderradius & {
+                    display: none;
+                }
+            }
+            &.error:before {
+                border: 1px solid $Rojo-Rimac-Linea2;
+            }
+          
+        } 
+   }
+
+    a {
+        color: $Violeta;
+        font-family: $Titulo-Regular;
+        font-size: 16px;
+        cursor: pointer;
+        &:hover {
+            text-decoration: none;
+            outline: none;
+        }
+        &.link-2 {
+            font-family: $Titulo-Regular;
+            font-size: 12px;
+            letter-spacing: 0.2px;
+            text-transform: uppercase;
+            &:hover {
+                color: $Acian-Hover;
+                i {
+                    svg {
+                        path {
+                            fill: $Acian-Hover;
+                        }
+                    }
+                }
+            }
+            i {
+                padding-right: 4px;
+                svg {
+                    fill: $Violeta;
+                }
+            }
+        }
+        &.link-3 {
+            font-family: $Titulo-Regular;
+            font-size: 12px;
+            letter-spacing: 0.2px;
+            text-transform: uppercase;
+            color: $Grey-3;
+            &:hover {
+                color: $Acian-Hover;
+                i {
+                    svg {
+                        path {
+                            fill: $Acian-Hover;
+                        }
+                    }
+                }
+            }
+            i {
+                padding-right: 4px;
+                svg {
+                    fill: $Grey-3;
+                }
+            }
+        }
+        &.link-legal {
+            font-family: $Titulo-Regular;
+            font-size: 12px;
+            letter-spacing: 0.2px;
+            color: $Grey-3;
+            text-decoration: underline;
+            &:hover {
+                color: $Acian-Hover;
+            }
+        }
+    }
+
+    button {
+        font-size: 16px;
+        &:disabled {
+            background-color: $Gray-Btn;
+            color: $Button-Disabled;
+        }
+    }
+        /*&.btn-normal {
+            border-radius: 100px;
+        }*/
+    // }
+
+
+    .error-message {
+        font-family: 'Roboto';
+        margin-top: 6px;
+        font-size: 10px;
+        color: $Rojo-Rimac-Linea2;
+    }
+
+   .validation-message {
+      font-size: 15px;
+      color: $Texto;
+      font-family: $Parrafo;
+      margin-bottom: 41px;
+      .item {
+         font-size: 14px;
+         margin-left: 5px;
+         &:before {
+               position: relative;
+               left: -5px;
+               content: "\2715";
+         }
+         &.valid {
+               color: $Verde;
+               margin-left: 5px;
+               &:before {
+                  position: relative;
+                  left: -5px;
+                  content: "\2713";
+               }
+         }
+      }
+
+    &.required-section {
+            .title {
+                margin-bottom: 8px;
+            }
+        }
+    }
+
+    .invalid-feedback {
+        display: none;
+        font-family: $Parrafo;
+        margin-top: 0.25rem;
+        font-size: 13px;
+        margin-left: 15px;
+        color: $Input-Border-error;
+    }
+
+    @include media-breakpoint-down(md){
+        .input-placeholder{
+            left: 16px;
+        }
+
+        .form-center{
+            text-align: center; 
+        }
+
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    #{$parent-class}{
+        button {
+            height: 42px;
+            padding: 15px 40px;
+            font-size: 14px !important;
+        }
+
+        .validation-message {
+            &.required-section {
+                .title {
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .d-center {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+
+

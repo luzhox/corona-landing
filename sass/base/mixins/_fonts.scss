@@ -1,0 +1,8 @@
+// Función con parémetros
+
+@mixin set-font($name, $size, $weight:100, $line-height:1.2em)  {
+  font-family: $name;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+}

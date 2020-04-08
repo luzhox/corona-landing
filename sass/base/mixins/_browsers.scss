@@ -1,0 +1,22 @@
+
+//Media queries for IE10+
+@mixin browser-ie-10plus() {
+  @media only screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { @content; }
+}
+
+//Media queries for Chrome
+@mixin browser-chrome() {
+  @media only screen and (-webkit-min-device-pixel-ratio:0) { @content; }
+}
+
+//Media queries for Safari
+@mixin browser-safari-and-chrome() {
+  @media only screen and (min-color-index:0) and (-webkit-min-device-pixel-ratio:0) { @content; }
+}
+
+//Media queries to use inside safari
+@mixin browser-chrome-only() {
+  @media only screen and (min-resolution:.001dpcm) { @content; }
+}
+
+

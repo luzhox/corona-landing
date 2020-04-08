@@ -1,0 +1,46 @@
+.box-filter-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: center;
+  li {
+    text-align: center;
+    padding: 8px 16px 8px 16px;
+    font-size: 12px;
+    border: 1px solid #edeff5;
+    cursor: pointer;
+    &:first-child { 
+      border: 1px solid #edeff5;
+      border-right: none;
+      border-radius: 6px 0px 0px 6px;
+    }
+    
+    &:last-child {
+      border: 1px solid #edeff5;
+      border-left: none;
+      border-radius: 0px 6px 6px 0px;
+    }
+
+    &.active, &:hover {
+      border: 1px solid $Rojo-Rimac;
+      color: $Rojo-Rimac;
+      font-weight: bold;
+    }
+  }
+
+  .min-width-button {
+    min-width: auto;
+    white-space: nowrap;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .box-filter-container {
+    .min-width-button {
+      min-width: 100px;
+      &:nth-child(2){
+        min-width: auto;
+      }
+    }
+  }
+}

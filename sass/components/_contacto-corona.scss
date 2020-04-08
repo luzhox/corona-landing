@@ -1,0 +1,210 @@
+.contacto-corona {
+    padding-top: 56px;
+    padding-bottom: 56px;
+    @include media(tablet) {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+    .container {
+        padding: 0;
+
+        @include media(desktopmini) {
+            max-width: 792px;
+        }
+        @include media(desktop) {
+            max-width: 800px;
+        }
+    }
+    &__contenido {
+        h4 {
+            font-family: $lato;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: -0.2px;
+            color: $gray;
+            padding: 0;
+            margin: 0;
+            margin-bottom: 48px;
+            @include media(tablet) {
+                font-size: 28px;
+                line-height: 36px;
+            }
+        }
+        h2 {
+            font-family: $lato;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 32px;
+            line-height: 40px;
+            letter-spacing: -0.6px;
+            color: $gray;
+            padding: 0;
+            margin: 0;
+            margin-bottom: 24px;
+            b {
+                font-weight: 400;
+                color: $red;
+            }
+            @include media(tablet) {
+                font-size: 40px;
+                line-height: 48px;
+            }
+        }
+        p {
+            font-family: $roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 36px;
+            color: $gray;
+            padding: 0;
+            margin: 0;
+            padding-bottom: 24px;
+            b {
+                font-weight: 400;
+            }
+        }
+        .line-divider-contact {
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            height: 1px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            background-color: $gray5;
+            @include media(tablet) {
+                max-width: 592px;
+            }
+            @include media(desktopmini) {
+                max-width: 888px;
+            }
+            @include media(desktop) {
+                max-width: 1184px;
+            }
+        }
+        &__opciones {
+            img {
+                display: none;
+                @include media(desktopmini) {
+                    width: 56px;
+                    height: auto;
+                    margin-right: 32px;
+                    vertical-align: top;
+                    display: inline-block;
+                }
+            }
+            &__text {
+                display: inline-block;
+                h4 {
+                    font-family: $lato;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 28px;
+                    letter-spacing: -0.2px;
+                    color: $gray;
+                    margin-bottom: 24px;
+                    @include media(tablet) {
+                        font-size: 24px;
+                        line-height: 32px;
+                        font-weight: 300;
+                    }
+                }
+                p {
+                    font-family: $roboto;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 28px;
+                    color: $gray;
+                    padding-bottom: 0;
+                    margin-bottom: 4px;
+                    @include media(tablet) {
+                        font-size: 18px;
+                        line-height: 32px;
+                    }
+                    @include media(desktopmini) {
+                        font-size: 20px;
+                        line-height: 36px;
+                    }
+                }
+                ul {
+                    margin: 0;
+                    padding: 0;
+                    li {
+                        margin: 0;
+                        padding: 0;
+                        list-style-type: none;
+                        p {
+                            font-family: $roboto;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 16px;
+                            line-height: 28px;
+                            color: $gray;
+                            display: inline-block;
+                            @include media(tablet) {
+                                font-size: 18px;
+                                line-height: 32px;
+                            }
+                            @include media(desktopmini) {
+                                font-size: 20px;
+                                line-height: 36px;
+                            }
+                        }
+                        a {
+                            font-family: $roboto;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 16px;
+                            line-height: 18px;
+                            text-decoration-line: underline;
+                            color: $acian2;
+                            @include media(tablet) {
+                                font-size: 18px;
+                                line-height: 32px;
+                            }
+                            @include media(desktopmini) {
+                                font-size: 20px;
+                                line-height: 36px;
+                            }
+                        }
+                    }
+                    .space {
+                        margin-top: 24px;
+                    }
+                    .telefono {
+                        &::before {
+                            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8.15746 11.1577C6.54614 8.94706 5.95629 7.68714 7.43968 6.68944C8.71544 5.83127 8.63098 5.7357 7.48361 3.60558C6.42344 1.63752 5.98179 1.1286 4.52231 2.25884C1.27645 4.4257 2.14038 7.94213 5.67082 12.7856C9.20125 17.6294 12.4758 19.6134 15.6188 17.4828C17.2235 16.5518 16.8768 15.9791 15.3142 14.3491C13.6229 12.5849 13.5419 12.4974 12.2878 13.3411C10.8262 14.3242 9.76879 13.3683 8.15746 11.1577Z' fill='%23A3ABCC'/%3E%3C/svg%3E");
+                            content: "";
+                            width: 20px;
+                            height: 20px;
+                            display: inline-block;
+                            background-size: cover;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            margin-right: 11px;
+                            vertical-align: middle;
+                        }
+                    }
+                    .correo {
+                        &::before {
+                            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M17.1939 4.39024L10.3717 9.96683C10.2668 10.0524 10.1354 10.0992 9.99992 10.0992C9.86441 10.0992 9.73307 10.0524 9.62819 9.96683L2.80208 4.39024C3.14073 4.13693 3.55264 4 3.97596 4H16.02C16.4433 4 16.8552 4.13693 17.1939 4.39024Z' fill='%23A3ABCC'/%3E%3Cpath d='M10.001 11.2701C10.408 11.2701 10.8024 11.1295 11.1171 10.8722L17.8904 5.33463C17.9625 5.54036 17.9996 5.75669 18 5.97463V14.0293C17.9995 14.5518 17.7911 15.0527 17.4207 15.4222C17.0502 15.7917 16.5479 15.9995 16.024 16H3.97603C3.45212 15.9995 2.9498 15.7917 2.57934 15.4222C2.20887 15.0527 2.00052 14.5518 2 14.0293V5.97463C2.00043 5.75669 2.03746 5.54036 2.10956 5.33463L8.88481 10.8722C9.19958 11.1295 9.594 11.2701 10.001 11.2701Z' fill='%23A3ABCC'/%3E%3C/svg%3E");
+                            content: "";
+                            width: 20px;
+                            height: 20px;
+                            display: inline-block;
+                            background-size: cover;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            margin-right: 11px;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

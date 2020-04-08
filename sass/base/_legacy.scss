@@ -1,0 +1,32 @@
+
+body {
+  
+
+  .portrait, .landscape {
+    position: relative;
+  }
+}
+
+// ESTILOS PARA IMPRESIÓN //
+
+@media only screen and (min-width: 641px), print {
+ 
+}
+
+@media only screen and (min-width: 960px) {
+ 
+}
+
+@media only screen and (min-width: 1250px) {
+ 
+}
+
+// DETECCIÓN POR ORIENTACIÓN //
+
+@media screen and (orientation:portrait) {
+
+}
+
+@media screen and (orientation:landscape) {
+ 
+}
