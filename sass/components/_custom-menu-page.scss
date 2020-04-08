@@ -39,6 +39,12 @@
     @media only screen and (max-width: 1023px) {
       display: none;
     }
+    @include media(tablet) {
+      width: 194px;
+    }
+    @include media(desktopmini) {
+      width: 194px;
+    }
   }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .container {

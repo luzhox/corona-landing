@@ -2443,6 +2443,16 @@ button {
     display: none;
   }
 }
+@media only screen and (min-width: 768px) {
+  .custom-menu-page .bar {
+    width: 194px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .custom-menu-page .bar {
+    width: 194px;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .custom-menu-page .container {
     max-width: 100%;
