@@ -13,9 +13,10 @@
     letter-spacing: -0.2px;
     color: $gray;
     font-family: $lato;
-    margin-bottom: 40px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid $gray5;
     @include media(tablet) {
-      margin-bottom: 48px;
+      padding-bottom: 48px;
     }
     b {
       font-weight: 400;
