@@ -250,11 +250,14 @@
   &__text {
     h3 {
       margin-bottom: 0px !important;
-      margin-top: 16px;
+      margin-top: 8px;
+      @include media(tablet) {
+        margin-top: 16px;
+      }
     }
   }
   a {
-    margin-top: 32px;
+    margin-top: 24px;
     @include media(desktopmini) {
       margin-top: 0px;
     }

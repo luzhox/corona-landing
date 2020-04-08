@@ -65,7 +65,7 @@
     flex-flow: wrap;
 
     @include media(desktopmini) {
-      text-align: center;
+      text-align: left;
     }
     &__hide {
       max-height: 0px;

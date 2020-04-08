@@ -214,7 +214,10 @@
       }
       h3 {
         font-weight: 300;
-        margin-bottom: 16px;
+        margin-bottom: 8px;
+        @include media(tablet) {
+          margin-bottom: 16px;
+        }
         b {
           font-weight: 400;
         }
@@ -263,7 +266,7 @@
       }
     }
     a {
-      margin-top: 32px;
+      margin-top: 24px;
       @include media(desktopmini) {
         margin-top: 0px;
       }

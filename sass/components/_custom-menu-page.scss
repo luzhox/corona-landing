@@ -55,10 +55,13 @@
     }
   }
   &__options {
-    height: 92px;
+    height: 72px;
     @include media(mobile) {
       display: flex;
       flex-flow: wrap;
+    }
+    @include media(tablet) {
+      height: 92px;
     }
     @media only screen and (max-width: 1024px) {
       // margin-left: col(4, 37);
@@ -84,11 +87,10 @@
       -webkit-appearance: none;
       appearance: none;
       border: 0px;
-      font-size: 20px;
-      line-height: 28px;
+
       color: $gray;
       display: inline;
-      margin-right: 36px;
+      margin-right: 28px;
       border: 0px;
       height: 100%;
       outline: 0px;
@@ -100,6 +102,17 @@
       -ms-transition: all 0.3s ease-in-out;
       -o-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out;
+      font-size: 12px;
+      line-height: 24px;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      @include media(tablet) {
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: 0px;
+        text-transform: initial;
+        margin-right: 36px;
+      }
       @include media(desktop) {
         margin-right: 48px;
       }
