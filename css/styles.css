@@ -2337,8 +2337,7 @@ button {
 }
 @media only screen and (min-width: 1360px) {
   .hero-rimac-gray__image {
-    width: 43.2432432432%;
-    margin-right: 5.4054054054%;
+    width: 48.6486486486%;
   }
 }
 .hero-rimac-gray__image img {
@@ -2382,7 +2381,7 @@ button {
 .hero-rimac-gray .Imagetablet {
   display: none;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 375px) {
   .hero-rimac-gray .Imagetablet {
     display: block;
   }
@@ -2392,7 +2391,7 @@ button {
     display: none;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 375px) {
   .hero-rimac-gray .Imagemobile {
     display: none;
   }
