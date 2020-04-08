@@ -19,6 +19,9 @@
         padding-left: 16px;
         margin-left: 16px;
       }
+      b {
+        font-weight: 400;
+      }
     }
   }
 
@@ -106,6 +109,9 @@
 
     @include media(tablet) {
       padding-left: col(5.3, 37);
+    }
+    @include media(desktopmini) {
+      padding-left: col(4, 37);
     }
     p {
       font-size: 16px;

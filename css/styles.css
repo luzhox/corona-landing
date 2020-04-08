@@ -3811,6 +3811,9 @@ button {
     margin-left: 16px;
   }
 }
+.corona-dropdown ul li b {
+  font-weight: 400;
+}
 .corona-dropdown__header {
   position: relative;
   display: flex;
@@ -3903,6 +3906,11 @@ button {
 @media only screen and (min-width: 768px) {
   .corona-dropdown__content {
     padding-left: 14.3243243243%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .corona-dropdown__content {
+    padding-left: 10.8108108108%;
   }
 }
 .corona-dropdown__content p {
