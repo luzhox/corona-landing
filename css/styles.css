@@ -3814,6 +3814,10 @@ button {
 .corona-dropdown ul li b {
   font-weight: 400;
 }
+.corona-dropdown a {
+  color: #6F7DFF;
+  font-weight: 400;
+}
 .corona-dropdown__header {
   position: relative;
   display: flex;
