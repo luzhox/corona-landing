@@ -2866,8 +2866,8 @@ button {
 @media only screen and (min-width: 1024px) {
   .line-divider {
     max-width: 888px;
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 64px;
+    margin-bottom: 64px;
   }
 }
 @media only screen and (min-width: 1360px) {

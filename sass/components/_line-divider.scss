@@ -13,8 +13,8 @@
   }
   @include media(desktopmini) {
     max-width: 888px;
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 64px;
+    margin-bottom: 64px;
   }
   @include media(desktop) {
     max-width: 1184px;
