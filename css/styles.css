@@ -3861,12 +3861,12 @@ button {
   letter-spacing: 0.2px;
   width: 56.7567567568%;
   margin-right: 8.1081081081%;
+  font-weight: 400;
 }
 @media only screen and (min-width: 768px) {
   .corona-dropdown__header .title {
     font-size: 24px;
     line-height: 32px;
-    font-weight: 300;
     letter-spacing: -0.2px;
     width: 78.3783783784%;
     padding-left: 8px;

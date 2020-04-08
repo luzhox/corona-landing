@@ -56,11 +56,10 @@
       letter-spacing: 0.2px;
       width: col(21, 37);
       margin-right: col(3, 37);
-
+      font-weight: 400;
       @include media(tablet) {
         font-size: 24px;
         line-height: 32px;
-        font-weight: 300;
         letter-spacing: -0.2px;
         width: col(29, 37);
         padding-left: 8px;
