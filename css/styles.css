@@ -2350,8 +2350,13 @@ button {
   flex-flow: wrap;
   -ms-flex-flow: wrap;
   display: -ms-flexbox;
-  width: 100%;
+  width: 84%;
   padding: 0;
+}
+@media only screen and (min-width: 768px) {
+  .hero-rimac-gray .container {
+    width: 100%;
+  }
 }
 .hero-rimac-gray .Imagedesktop {
   display: none;
@@ -2419,7 +2424,7 @@ button {
 }
 @media only screen and (max-width: 767px) {
   .custom-menu-page .container {
-    max-width: 100%;
+    padding: 0;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -2468,7 +2473,6 @@ button {
   .custom-menu-page__options {
     display: flex;
     flex-flow: wrap;
-    margin-left: 10.8108108108%;
   }
 }
 @media only screen and (max-width: 1024px) {

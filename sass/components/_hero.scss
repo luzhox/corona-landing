@@ -79,8 +79,11 @@
     flex-flow: wrap;
     -ms-flex-flow: wrap;
     display: -ms-flexbox;
-    width: 100%;
+    width: 84%;
     padding: 0;
+    @include media(tablet) {
+      width: 100%;
+    }
   }
   .Image {
     &desktop {

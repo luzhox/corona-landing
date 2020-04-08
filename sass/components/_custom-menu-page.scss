@@ -18,7 +18,7 @@
   .container {
     position: relative;
     @include media(mobile) {
-      max-width: 100%;
+      padding: 0;
     }
     @include media(desktopmini) {
       max-width: 100%;
@@ -57,9 +57,10 @@
     @include media(mobile) {
       display: flex;
       flex-flow: wrap;
-      margin-left: col(4, 37);
     }
     @media only screen and (max-width: 1024px) {
+      // margin-left: col(4, 37);
+
       width: 850px;
     }
     @include media(tablet) {
