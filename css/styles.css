@@ -3250,6 +3250,9 @@ button {
     line-height: 36px;
   }
 }
+.sintomas-corona ul li:last-child {
+  margin-bottom: 0px;
+}
 .sintomas-corona .container {
   padding: 0px;
 }
@@ -3301,11 +3304,11 @@ button {
   font-weight: 400;
 }
 .sintomas-corona__text h2 {
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .sintomas-corona__text h2 {
-    margin-bottom: 24px;
+    margin-bottom: 32px;
   }
 }
 .sintomas-corona__text p {
@@ -3388,6 +3391,7 @@ button {
   background-color: #fff;
   padding: 32px;
   padding-top: 0px;
+  padding-bottom: 40px;
   border: 3px solid #f0f2fa;
   border-radius: 12px;
   text-align: center;
@@ -3407,7 +3411,7 @@ button {
 }
 @media only screen and (min-width: 1024px) {
   .sintomas-corona__card {
-    padding: 64px;
+    padding: 48px 64px;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -3488,6 +3492,23 @@ button {
 }
 .sintomas-corona__card .text .btn__primary {
   margin-bottom: 16px;
+}
+.sintomas-corona__card .text .link {
+  font-weight: 400;
+  text-transform: initial;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0px;
+  color: #6F7DFF;
+  text-decoration: underline;
+  display: block;
+}
+@media only screen and (min-width: 768px) {
+  .sintomas-corona__card .text .link {
+    display: inline;
+    font-size: 18px;
+    line-height: 32px;
+  }
 }
 .sintomas-corona__test {
   margin-bottom: 56px;
