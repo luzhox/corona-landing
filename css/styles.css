@@ -2393,7 +2393,6 @@ button {
 
 .custom-menu-page {
   border-bottom: 1px solid #e4e8f7;
-  margin-bottom: 56px;
 }
 @media only screen and (max-width: 767px) {
   .custom-menu-page {
@@ -2406,17 +2405,11 @@ button {
 }
 @media only screen and (min-width: 768px) {
   .custom-menu-page {
-    margin-bottom: 80px;
     overflow-x: scroll;
     max-width: 100%;
   }
   .custom-menu-page::-webkit-scrollbar {
     display: none;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .custom-menu-page {
-    margin-bottom: 96px;
   }
 }
 .custom-menu-page .container {
@@ -2550,6 +2543,19 @@ button {
   width: 100%;
 }
 
+.corona-proteccion-text {
+  padding-top: 56px;
+}
+@media only screen and (min-width: 768px) {
+  .corona-proteccion-text {
+    padding-top: 80px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .corona-proteccion-text {
+    padding-top: 96px;
+  }
+}
 .corona-proteccion-text .showmob {
   display: block;
 }

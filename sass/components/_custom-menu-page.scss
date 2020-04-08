@@ -1,6 +1,5 @@
 .custom-menu-page {
   border-bottom: 1px solid #e4e8f7;
-  margin-bottom: 56px;
   @include media(mobile) {
     max-width: 100%;
     overflow-x: scroll;
@@ -9,16 +8,13 @@
     }
   }
   @include media(tablet) {
-    margin-bottom: 80px;
     overflow-x: scroll;
     max-width: 100%;
     &::-webkit-scrollbar {
       display: none;
     }
   }
-  @include media(desktopmini) {
-    margin-bottom: 96px;
-  }
+
   .container {
     position: relative;
     @include media(mobile) {
