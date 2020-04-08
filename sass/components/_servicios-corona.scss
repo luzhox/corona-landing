@@ -1,9 +1,11 @@
 .servicios-corona {
-  max-width: 296px;
   margin-left: auto;
   margin-right: auto;
+  max-width: 480px;
+  width: 84%;
   @include media(tablet) {
     max-width: 592px;
+    width: 100%;
   }
   @include media(desktopmini) {
     max-width: 792px;
