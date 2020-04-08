@@ -62,3 +62,13 @@ $('.corona-btn-ver-preguntas').click(function(){
   $('#' + id).toggleClass('active')
   $(this).toggleClass('active')
 })
+
+
+window.addEventListener('resize', function(){
+  if (window.matchMedia("(min-width: 1024px)").matches) {
+    var bar = $('.bar')
+    bar.css('width',widthActic + 'px')
+    bar.css('left',$('.custom-menu-page__btn.active').position().left + 'px')
+
+  }
+});
