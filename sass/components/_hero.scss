@@ -17,6 +17,7 @@
       font-size: 16px;
       line-height: 28px;
       color: $gray;
+      font-weight: 400;
     }
     @include media(tablet) {
       .title-02 {
