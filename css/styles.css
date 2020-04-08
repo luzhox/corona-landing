@@ -3505,14 +3505,13 @@ button {
 }
 .contacto-corona__contenido h4 {
   font-family: "Lato", Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 24px;
   line-height: 32px;
   letter-spacing: -0.2px;
   color: #494F66;
   padding: 0;
   margin: 0;
+  font-weight: 400 !important;
   margin-bottom: 48px;
 }
 @media only screen and (min-width: 768px) {
