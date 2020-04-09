@@ -2331,6 +2331,12 @@ button {
 .hero-rimac-gray__image {
   margin-top: 32px;
 }
+@media only screen and (max-width: 360px) {
+  .hero-rimac-gray__image {
+    position: relative;
+    top: 3px;
+  }
+}
 @media only screen and (min-width: 768px) {
   .hero-rimac-gray__image {
     margin-top: 40px;

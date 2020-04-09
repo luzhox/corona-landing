@@ -61,6 +61,10 @@
   }
   &__image {
     margin-top: 32px;
+    @media only screen and (max-width: 360px) {
+      position: relative;
+      top: 3px;
+    }
     @include media(tablet) {
       margin-top: 40px;
     }
