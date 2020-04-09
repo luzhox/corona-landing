@@ -2488,7 +2488,7 @@ button {
 }
 @media only screen and (max-width: 500px) {
   .custom-menu-page__options {
-    width: 730px;
+    width: 700px;
   }
 }
 @media only screen and (min-width: 768px) {
