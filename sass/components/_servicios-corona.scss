@@ -3,6 +3,7 @@
   margin-right: auto;
   max-width: 480px;
   width: 84%;
+
   @include media(tablet) {
     max-width: 592px;
     width: 100%;
@@ -12,6 +13,13 @@
   }
   @include media(desktop) {
     max-width: 800px;
+  }
+
+  .line-divider {
+    @include media(desktopmini) {
+      margin-top: 80px;
+      margin-bottom: 80px;
+    }
   }
   .showmob {
     display: block;

@@ -2922,6 +2922,12 @@ button {
     max-width: 800px;
   }
 }
+@media only screen and (min-width: 1024px) {
+  .servicios-corona .line-divider {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+}
 .servicios-corona .showmob {
   display: block;
 }
@@ -3891,8 +3897,14 @@ button {
   position: relative;
   display: flex;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+@media only screen and (min-width: 768px) {
+  .corona-dropdown__header {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
 }
 .corona-dropdown__header img {
   margin-right: 8.1081081081%;
@@ -4028,6 +4040,14 @@ button {
 @media only screen and (min-width: 1360px) {
   .corona-dropdown {
     max-width: 800px;
+  }
+}
+.corona-dropdown.only-text .corona-dropdown__header {
+  padding: 32px 0px;
+}
+@media only screen and (min-width: 768px) {
+  .corona-dropdown.only-text .corona-dropdown__header {
+    padding: 40px 0px;
   }
 }
 .corona-dropdown.only-text .title {
