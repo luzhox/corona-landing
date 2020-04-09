@@ -3562,12 +3562,13 @@ button {
   padding: 0;
   margin: 0;
   font-weight: 400 !important;
-  margin-bottom: 48px;
+  margin-bottom: 40px;
 }
 @media only screen and (min-width: 768px) {
   .contacto-corona__contenido h4 {
     font-size: 28px;
     line-height: 36px;
+    margin-bottom: 48px;
   }
 }
 .contacto-corona__contenido h2 {
