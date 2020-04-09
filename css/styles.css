@@ -1910,23 +1910,23 @@ body .light {
 }
 
 /* Center and max-width the content */
-.container {
+.container-corona {
   width: 84%;
   max-width: 480px;
   margin: 0 auto;
 }
 @media only screen and (min-width: 768px) {
-  .container {
+  .container-corona {
     max-width: 592px;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .container {
+  .container-corona {
     max-width: 888px;
   }
 }
 @media only screen and (min-width: 1360px) {
-  .container {
+  .container-corona {
     max-width: 1184px;
   }
 }
@@ -2344,7 +2344,7 @@ button {
   width: 100%;
   height: auto;
 }
-.hero-rimac-gray .container {
+.hero-rimac-gray .container-corona {
   display: flex;
   flex-flow: wrap;
   -ms-flex-flow: wrap;
@@ -2353,7 +2353,7 @@ button {
   padding: 0;
 }
 @media only screen and (min-width: 768px) {
-  .hero-rimac-gray .container {
+  .hero-rimac-gray .container-corona {
     width: 100%;
   }
 }
@@ -2418,16 +2418,16 @@ button {
     display: none;
   }
 }
-.custom-menu-page .container {
+.custom-menu-page .container-corona {
   position: relative;
 }
 @media only screen and (max-width: 767px) {
-  .custom-menu-page .container {
+  .custom-menu-page .container-corona {
     padding: 0;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .custom-menu-page .container {
+  .custom-menu-page .container-corona {
     max-width: 100%;
     width: 100%;
   }
@@ -2461,7 +2461,7 @@ button {
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .custom-menu-page .container {
+  .custom-menu-page .container-corona {
     max-width: 100%;
     padding: 0;
     margin-left: 10.8108108108%;
@@ -2601,22 +2601,22 @@ button {
     display: block;
   }
 }
-.corona-proteccion-text .container {
+.corona-proteccion-text .container-corona {
   padding: 0;
 }
 @media only screen and (min-width: 768px) {
-  .corona-proteccion-text .container {
+  .corona-proteccion-text .container-corona {
     padding-left: 0px;
     padding-right: 0px;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .corona-proteccion-text .container {
+  .corona-proteccion-text .container-corona {
     max-width: 792px;
   }
 }
 @media only screen and (min-width: 1360px) {
-  .corona-proteccion-text .container {
+  .corona-proteccion-text .container-corona {
     max-width: 800px;
   }
 }
@@ -3254,16 +3254,16 @@ button {
 .sintomas-corona ul li:last-child {
   margin-bottom: 0px;
 }
-.sintomas-corona .container {
+.sintomas-corona .container-corona {
   padding: 0px;
 }
 @media only screen and (min-width: 1024px) {
-  .sintomas-corona .container {
+  .sintomas-corona .container-corona {
     max-width: 792px;
   }
 }
 @media only screen and (min-width: 1360px) {
-  .sintomas-corona .container {
+  .sintomas-corona .container-corona {
     max-width: 800px;
   }
 }
@@ -3546,16 +3546,16 @@ button {
     padding-bottom: 96px;
   }
 }
-.contacto-corona .container {
+.contacto-corona .container-corona {
   padding: 0;
 }
 @media only screen and (min-width: 1024px) {
-  .contacto-corona .container {
+  .contacto-corona .container-corona {
     max-width: 792px;
   }
 }
 @media only screen and (min-width: 1360px) {
-  .contacto-corona .container {
+  .contacto-corona .container-corona {
     max-width: 800px;
   }
 }
@@ -3789,11 +3789,11 @@ button {
 .prevenir-corona {
   padding-top: 56px;
 }
-.prevenir-corona .container {
+.prevenir-corona .container-corona {
   padding: 0px;
 }
 @media only screen and (min-width: 1024px) {
-  .prevenir-corona .container {
+  .prevenir-corona .container-corona {
     max-width: 792px;
   }
 }
@@ -4165,7 +4165,7 @@ button {
   padding-bottom: 56px;
   background-color: #F7F8FC;
 }
-#preguntas-corona .container {
+#preguntas-corona .container-corona {
   padding: 0;
 }
 #preguntas-corona h3 {

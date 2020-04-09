@@ -15,7 +15,7 @@
     }
   }
 
-  .container {
+  .container-corona {
     position: relative;
     @include media(mobile) {
       padding: 0;
@@ -48,7 +48,7 @@
     }
   }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .container {
+    .container-corona {
       max-width: 100%;
       padding: 0;
       margin-left: col(4, 37);
