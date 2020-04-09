@@ -261,6 +261,7 @@
         color: $acian2;
         text-decoration: underline;
         display: block;
+        font-family: $roboto;
         @include media(tablet) {
           display: inline;
           font-size: 18px;

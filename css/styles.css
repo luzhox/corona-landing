@@ -3547,6 +3547,7 @@ button {
   color: #6F7DFF;
   text-decoration: underline;
   display: block;
+  font-family: "Roboto", sans-serif;
 }
 @media only screen and (min-width: 768px) {
   .sintomas-corona__card .text .link {
