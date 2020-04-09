@@ -68,6 +68,12 @@
 
       width: 850px;
     }
+
+    @media only screen and (max-width: 500px) {
+      // margin-left: col(4, 37);
+
+      width: 730px;
+    }
     @include media(tablet) {
       display: flex;
       font-family: wrap;
