@@ -3782,7 +3782,6 @@ button {
   font-family: "Lato", Arial, sans-serif;
   font-weight: 300;
   padding-bottom: 32px;
-  border-bottom: 1px solid #E4E8F7;
 }
 @media only screen and (min-width: 768px) {
   .prevenir-corona h3 {
@@ -3848,6 +3847,9 @@ button {
   max-width: 480px;
   width: 100%;
   margin: 0 auto;
+}
+.corona-dropdown.first {
+  border-top: 1px solid #E4E8F7 !important;
 }
 .corona-dropdown ul li {
   color: #494F66;
@@ -4002,9 +4004,6 @@ button {
   width: 8px;
   height: 6px;
   display: block;
-}
-.corona-dropdown:first-child {
-  border-top: 1px solid #E4E8F7;
 }
 @media only screen and (min-width: 768px) {
   .corona-dropdown {

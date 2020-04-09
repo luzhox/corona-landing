@@ -17,7 +17,7 @@
     font-family: $lato;
     font-weight: 300;
     padding-bottom: 32px;
-    border-bottom: 1px solid $gray5;
+
     @include media(tablet) {
       font-size: 28px;
       line-height: 36px;
