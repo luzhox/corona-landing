@@ -2483,7 +2483,7 @@ button {
 }
 @media only screen and (max-width: 1024px) {
   .custom-menu-page__options {
-    width: 850px;
+    width: 880px;
   }
 }
 @media only screen and (max-width: 500px) {
