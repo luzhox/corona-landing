@@ -2518,7 +2518,7 @@ button {
   height: 100%;
   outline: 0px;
   background: transparent;
-  font-weight: 300;
+  font-weight: 400;
   font-family: "Lato", Arial, sans-serif;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -2567,7 +2567,7 @@ button {
 .custom-menu-page__options button:hover {
   position: relative;
   color: #EF3340;
-  font-weight: 300;
+  font-weight: 400;
 }
 .custom-menu-page__options button:hover.active {
   position: initial;
