@@ -2277,6 +2277,7 @@ button {
 @media only screen and (max-width: 420px) {
   .hero-rimac-gray__text .title-02 i {
     display: block;
+    margin-top: 4px;
   }
 }
 @media only screen and (max-width: 420px) {
