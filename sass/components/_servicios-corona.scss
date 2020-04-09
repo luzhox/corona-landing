@@ -118,7 +118,7 @@
         top: 1px;
       }
     }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 1023px) {
       display: flex;
       align-items: center;
 
@@ -204,10 +204,12 @@
       }
 
       .servicios-corona__item__text {
-        span {
-          display: inline-block !important;
-          position: initial !important;
-          margin-bottom: 8px;
+        @media only screen and (max-width: 1023px) {
+          span {
+            display: inline-block !important;
+            position: initial !important;
+            margin-bottom: 8px;
+          }
         }
       }
     }

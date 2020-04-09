@@ -3070,7 +3070,7 @@ button {
   right: -18px;
   top: 1px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1023px) {
   .servicios-corona__item {
     display: flex;
     align-items: center;
@@ -3086,7 +3086,7 @@ button {
     margin-bottom: 8px;
   }
 }
-@media only screen and (max-width: 768px) and (min-width: 768px) {
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
   .servicios-corona__item .servicios-corona__item__text p {
     margin-bottom: 0px;
   }
@@ -3160,10 +3160,12 @@ button {
   right: 16px;
   top: 16px;
 }
-.servicios-corona__item.new .servicios-corona__item__text span {
-  display: inline-block !important;
-  position: initial !important;
-  margin-bottom: 8px;
+@media only screen and (max-width: 1023px) {
+  .servicios-corona__item.new .servicios-corona__item__text span {
+    display: inline-block !important;
+    position: initial !important;
+    margin-bottom: 8px;
+  }
 }
 @media only screen and (min-width: 768px) {
   .servicios-corona__item__cont {
