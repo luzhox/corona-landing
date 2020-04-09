@@ -136,11 +136,6 @@
             margin-bottom: 0px;
           }
         }
-        span {
-          display: inline-block !important;
-          position: initial !important;
-          margin-bottom: 8px;
-        }
       }
     }
     @media only screen and (max-width: 480px) {
@@ -206,6 +201,14 @@
         position: absolute;
         right: 16px;
         top: 16px;
+      }
+
+      .servicios-corona__item__text {
+        span {
+          display: inline-block !important;
+          position: initial !important;
+          margin-bottom: 8px;
+        }
       }
     }
     &__cont {
