@@ -131,7 +131,10 @@
       }
       .servicios-corona__item__text {
         p {
-          margin-bottom: 0px;
+          margin-bottom: 8px;
+          @include media(tablet) {
+            margin-bottom: 0px;
+          }
         }
         span {
           display: inline-block !important;
