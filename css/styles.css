@@ -2576,19 +2576,6 @@ button {
   width: 100%;
 }
 
-.corona-proteccion-text {
-  padding-top: 56px;
-}
-@media only screen and (min-width: 768px) {
-  .corona-proteccion-text {
-    padding-top: 80px;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .corona-proteccion-text {
-    padding-top: 96px;
-  }
-}
 .corona-proteccion-text .showmob {
   display: block;
 }
@@ -3148,7 +3135,6 @@ button {
   margin-left: auto;
   margin-right: auto;
   margin-top: 8px;
-  margin-bottom: 64px;
 }
 .servicios-corona__btn p {
   font-weight: 400;
@@ -3585,7 +3571,12 @@ button {
   color: #494F66;
   padding: 0;
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
+}
+@media only screen and (min-width: 768px) {
+  .contacto-corona__contenido h2 {
+    margin-bottom: 24px;
+  }
 }
 .contacto-corona__contenido h2 b {
   font-weight: 400;
@@ -3657,7 +3648,7 @@ button {
   line-height: 28px;
   letter-spacing: -0.2px;
   color: #494F66;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 @media only screen and (min-width: 768px) {
   .contacto-corona__contenido__opciones__text h4 {
@@ -4089,6 +4080,10 @@ button {
   fill: white;
 }
 
+.only-text .title {
+  width: 70%;
+}
+
 .corona-dropdown__cont {
   max-height: 0px;
   -webkit-transition: all 0.3s ease-in-out;
@@ -4097,6 +4092,24 @@ button {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   overflow: hidden;
+  width: 84%;
+  max-width: 480px;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 768px) {
+  .corona-dropdown__cont {
+    max-width: 592px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .corona-dropdown__cont {
+    max-width: 792px;
+  }
+}
+@media only screen and (min-width: 1360px) {
+  .corona-dropdown__cont {
+    max-width: 800px;
+  }
 }
 .corona-dropdown__cont.active {
   max-height: 100rem;

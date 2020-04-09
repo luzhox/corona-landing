@@ -41,7 +41,10 @@
             color: $gray;
             padding: 0;
             margin: 0;
-            margin-bottom: 24px;
+            margin-bottom: 16px;
+            @include media(tablet) {
+                margin-bottom: 24px;
+            }
             b {
                 font-weight: 400;
                 color: $red;
@@ -103,7 +106,7 @@
                     line-height: 28px;
                     letter-spacing: -0.2px;
                     color: $gray;
-                    margin-bottom: 24px;
+                    margin-bottom: 16px;
                     @include media(tablet) {
                         font-size: 24px;
                         line-height: 32px;

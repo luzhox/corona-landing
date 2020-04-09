@@ -224,6 +224,11 @@
     }
   }
 }
+.only-text {
+  .title {
+    width: 70%;
+  }
+}
 .corona-dropdown__cont {
   max-height: 0px;
   -webkit-transition: all 0.3s ease-in-out;
@@ -232,6 +237,18 @@
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   overflow: hidden;
+  width: 84%;
+  max-width: 480px;
+  margin: 0 auto;
+  @include media(tablet) {
+    max-width: 592px;
+  }
+  @include media(desktopmini) {
+    max-width: 792px;
+  }
+  @include media(desktop) {
+    max-width: 800px;
+  }
   &.active {
     max-height: 100rem;
   }
