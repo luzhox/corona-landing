@@ -95,6 +95,21 @@
     &:hover {
       box-shadow: 0px 8px 30px rgba(20, 43, 127, 0.1), 0px 1px 4px rgba(163, 171, 204, 0.06);
     }
+    .link {
+      position: relative;
+      &::after {
+        content: "";
+        background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M3.93988 2.42905C4.1867 2.19032 4.58253 2.19032 4.82935 2.42905L8.06012 5.55405C8.31329 5.79894 8.31329 6.20106 8.06012 6.44595L4.82935 9.57095C4.58253 9.80968 4.1867 9.80968 3.93988 9.57095C3.68671 9.32606 3.68671 8.92394 3.93988 8.67905L6.70961 6L3.93988 3.32095C3.68671 3.07606 3.68671 2.67394 3.93988 2.42905Z' fill='%236F7DFF'/%3E%3C/svg%3E");
+        width: 12px;
+        height: 12px;
+        display: block;
+        margin-right: 4px;
+        position: absolute;
+        position: absolute;
+        right: -18px;
+        top: 1px;
+      }
+    }
     @media only screen and (max-width: 768px) {
       display: flex;
       align-items: center;
@@ -114,21 +129,6 @@
           display: inline-block !important;
           position: initial !important;
           margin-bottom: 8px;
-        }
-      }
-      .link {
-        position: relative;
-        &::after {
-          content: "";
-          background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M3.93988 2.42905C4.1867 2.19032 4.58253 2.19032 4.82935 2.42905L8.06012 5.55405C8.31329 5.79894 8.31329 6.20106 8.06012 6.44595L4.82935 9.57095C4.58253 9.80968 4.1867 9.80968 3.93988 9.57095C3.68671 9.32606 3.68671 8.92394 3.93988 8.67905L6.70961 6L3.93988 3.32095C3.68671 3.07606 3.68671 2.67394 3.93988 2.42905Z' fill='%236F7DFF'/%3E%3C/svg%3E");
-          width: 12px;
-          height: 12px;
-          display: block;
-          margin-right: 4px;
-          position: absolute;
-          position: absolute;
-          right: -18px;
-          top: 1px;
         }
       }
     }

@@ -1,8 +1,10 @@
-.corona-proteccion-text {
+.corona-proteccion {
   padding-top: 56px;
   @include media(tablet) {
     padding-top: 96px;
   }
+}
+.corona-proteccion-text {
   .showmob {
     display: block;
     @include media(tablet) {
