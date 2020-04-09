@@ -2576,6 +2576,14 @@ button {
   width: 100%;
 }
 
+.corona-proteccion-text {
+  padding-top: 56px;
+}
+@media only screen and (min-width: 768px) {
+  .corona-proteccion-text {
+    padding-top: 96px;
+  }
+}
 .corona-proteccion-text .showmob {
   display: block;
 }
