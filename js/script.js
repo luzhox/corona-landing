@@ -1,4 +1,3 @@
-
    var widthActic = $('.custom-menu-page__btn.active')
    var bar = $('.bar')
    bar.css('width',widthActic + 'px')
@@ -11,7 +10,6 @@
         'slow');
     }
    })
-
 
   if (window.matchMedia("(min-width: 1024px)").matches) {
     $('.custom-menu-page__btn').hover(function(e){
@@ -60,16 +58,11 @@
      });
     })
 
-  
-
 $('.corona-dropdown').click(function(){
   $(this).toggleClass('active')
   $(this).siblings().removeClass('active')
 
 })
-
-
-
 
 $('.servicios-corona__btn').click(function(){
   var id=  $(this).data('id')
@@ -80,8 +73,6 @@ $('.servicios-corona__btn').click(function(){
 $('.servicios-corona__item').click(function(){
   var url = $(this).data('url')
   location.replace(url)
-
-
   digitalData.push ({
     action:{
     group:"Landing - Coronavirus",
@@ -94,7 +85,6 @@ $('.servicios-corona__item').click(function(){
 
 })
 $('.corona-proteccion-card__text a').click(function(){
-
   window.digitalData.push ({
     action:{
     group:"Landing - Coronavirus",
@@ -108,7 +98,6 @@ $('.corona-proteccion-card__text a').click(function(){
 
 
 $('.corona-proteccion-test__text a').click(function(){
-
   window.digitalData.push ({
     action:{
     group:"Landing - Coronavirus",
@@ -120,29 +109,22 @@ $('.corona-proteccion-test__text a').click(function(){
    });
 })
 
-
-
-
-
 $('.corona-btn-ver-preguntas').click(function(){
   var id=  $(this).data('id')
   $('#' + id).toggleClass('active')
   $(this).toggleClass('active')
 })
 
-
 window.addEventListener('resize', function(){
   if (window.matchMedia("(min-width: 1024px)").matches) {
     var bar = $('.bar')
     bar.css('width',widthActic + 'px')
     bar.css('left',$('.custom-menu-page__btn.active').position().left + 'px')
-
   }
 });
 
 $('.sintomas-corona__test__text a').click(function(){
-
-  window.digitalData.push ({
+    window.digitalData.push ({
     action:{
     group:"Landing - Coronavirus",
     category:"Sección – Síntomas",
@@ -155,8 +137,7 @@ $('.sintomas-corona__test__text a').click(function(){
 })
 
 $('.sintomas-corona__card .link').click(function(){
-
-  window.digitalData.push ({
+    window.digitalData.push ({
     action:{
     group:"Landing - Coronavirus",
     category:"Sección – Síntomas",
@@ -169,8 +150,7 @@ $('.sintomas-corona__card .link').click(function(){
 })
 
 $('.prevenir-corona__video').click(function(){
-
-  window.digitalData.push ({
+    window.digitalData.push ({
     action:{
     group:"Landing - Coronavirus",
     category:"Sección – Prevención",
@@ -181,7 +161,6 @@ $('.prevenir-corona__video').click(function(){
    });
 
 })
-
 
 $('.corona-dropdown .title').click(function(){
 console.log($(this).parent().parent().data('parent'))
@@ -196,8 +175,5 @@ console.log($(this).parent().parent().data('parent'))
       },
       event:"trackAction"
      });
-
   }
-
-
 })
