@@ -29,7 +29,11 @@
       document.getElementsByClassName('custom-menu-page__btn active')[0]
       .classList.remove('active')
     e.target.classList.add('active')
-      
+    var lugar = $(this).data('id')
+    console.log('lugar',lugar)
+    $('html,body').animate({
+      scrollTop: $('#'+lugar).offset().top},
+      'slow');
     window.digitalData.push ({
       action:{
       group:"Landing - Coronavirus",
@@ -64,13 +68,7 @@ $('.corona-dropdown').click(function(){
 
 })
 
-$('.custom-menu-page__btn').click(function(){
-  var lugar = $(this).data('id')
-  console.log('lugar',lugar)
-  $('html,body').animate({
-    scrollTop: $('#'+lugar).offset().top},
-    'slow');
-})
+
 
 
 $('.servicios-corona__btn').click(function(){
