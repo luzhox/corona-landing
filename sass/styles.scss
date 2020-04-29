@@ -24,9 +24,16 @@
 @import "./components/_prevenir-corona";
 @import "./components/_corona-dropdown";
 @import "./components/_preguntas-corona";
+@import "./components/_header-cards-corona";
 
-.header {
-  height: 64px;
+.rimac-header-public {
+  height: 56px;
   width: 100%;
   background-color: $red;
+  top: 0;
+  z-index: 99;
+
+  @include media(desktopmini) {
+    height: 64px;
+  }
 }

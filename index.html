@@ -9,9 +9,22 @@
 </head>
 <body>
 
-  <section class='header'></section>
+  <style>
 
-  <section class='hero-rimac-gray'>
+.rimac-header-public {
+  position: fixed;
+ 
+}
+@media only screen and (min-width:1024px){
+  .rimac-header-public {
+  position: initial;
+ 
+}  
+  }
+  </style>
+  <section class='rimac-header-public'></section>
+
+  <!-- <section class='hero-rimac-gray'>
     <div class='container-corona'>
       <div class='hero-rimac-gray__text'>
         <h2 class='title-02 red'>
@@ -30,36 +43,77 @@
         <img src='./img/img-corona-mob.svg' class='Imagemobile' alt='' />
       </div>
     </div>
-  </section>
+  </section> -->
+  <section class="header-cards-corona">
+    <div class="container-corona">
+      <h2>
+        Queremos <b>ayudarte frente al</b> <span>COVID-19</span>
+      </h2>
+      <p>Sumamos esfuerzos ampliando nuestros canales y servicios digitales.</p>
+      <div class="header-cards-corona__cards">
+          <div class="header-cards-corona__cards__card">
+            <div class="text">
+                <h4>¿Tienes síntomas del COVID-19?</h4>
+                <p>Resultado y seguimiento</p>
+                <span>Test y seguimiento</span>
+                <a href="">DESCARTAR</a>
+            </div>
+            <div class="image">
+              <img src="./img/headercards/orientacion-medica.svg" alt="" class="image__deskt">
+              <img src="./img/headercards/orientacion-medica-mob.svg" alt="" class="image__mob">
+            </div>
+          </div>
+          <div class="header-cards-corona__cards__card">
+            <div class="text">
+                <h4>¿Orientación médica por otro motivo?</h4>
+                <p>Orientación médica</p>
+                <span>Orientación médica</span>
+                <a href="">ATENDERME</a>
+            </div>
+            <div class="image">
+              <img src="./img/headercards/sintomad-covid.svg" alt="" class="image__deskt">
+              <img src="./img/headercards/sintomad-covid-mob.svg" alt="" class="image__mob">
+            </div>
+          </div>
+      </div>
+    </div>
 
+  </section>
   <section class='custom-menu-page'>
     <div class='container-corona'>
       <div class='custom-menu-page__options'>
+        <img class="custom-menu-page__options__logo" src="./img/Logo-RIMAC.svg" alt="">
         <button data-id="canales-digitales"
           class='custom-menu-page__btn active'
         >
-        Coberturas y servicios
+        Servicios
         </button>
         <button data-id="sintomas" class='custom-menu-page__btn'>
-          Síntomas
+          Cobertura
         </button>
         <button data-id="prevencion" class='custom-menu-page__btn'>
           Prevención
         </button>
         <button data-id="preguntas-corona" class='custom-menu-page__btn'>
-          Preguntas y respuestas
-
+          Síntomas
+        </button>
+        <button data-id="contacto-corona" class='custom-menu-page__btn'>
+          Preguntas y respuestas 
         </button>
         <button data-id="contacto-corona" class='custom-menu-page__btn'>
           Contacto
         </button>
+        <button class="returnToTop custom-menu-page__options__return">
+          <img src="./img/return-arrow.svg" alt="">
+        </button>
      
       </div>
+      
       <div class='bar'></div>
     </div>
   </section>
 
-  <section id="canales-digitales" class="corona-proteccion-text corona-proteccion">
+  <!-- <section id="canales-digitales" class="corona-proteccion-text corona-proteccion">
     <div class="container-corona">
         <div class="corona-proteccion-text__atention">
           <h3><b>Cobertura y servicios</b></h3>
@@ -83,11 +137,11 @@
        
 
     </div>
-  </section>
+  </section> -->
   
   <section id="servicios-corona" class="servicios-corona">
-    <h3 class="showmob">
-      Y nuestros nuevos servicios 
+    <h3>
+      Más servicios pensados en ti 
     </h3>
     <div class="servicios-corona__items">
      
@@ -125,6 +179,12 @@
           <a href="" class="link">IR A MI CUENTA</a>
         </div>
       </div>
+
+      
+
+     
+    </div>
+    <div id="coronadrop" class="servicios-corona__items servicios-corona__items__hide">
       <div class="servicios-corona__item" data-url="https://www.google.com.pe/">
         <img src="./img/servicios-cards/icon_file.svg" alt="">
         <div class="servicios-corona__item__cont">
@@ -156,10 +216,6 @@
       </div>
 
       </div>
-
-     
-    </div>
-    <div id="coronadrop" class="servicios-corona__items servicios-corona__items__hide">
       <div class="servicios-corona__item" data-url="https://www.google.com.pe/">
         <img src="./img/servicios-cards/icon_notes.svg" alt="">
         <div class="servicios-corona__item__cont">
@@ -209,7 +265,7 @@
 
 
   </section>
-
+<!-- 
   <section id="proteccion" class='corona-proteccion-text'>
     <div class='container-corona'>
     <div class="corona-proteccion-text__text">
@@ -242,9 +298,9 @@
       </div>
  
     </div> 
-  </section>
+  </section> -->
 
-  <section id="sintomas" class="sintomas-corona">
+  <!-- <section id="sintomas" class="sintomas-corona">
     <div class="container-corona">
       <div class="sintomas-corona__text">
         <h3>¿Cómo se contagia?</h3>
@@ -295,14 +351,29 @@
         </div>
         </div>
     </div>
-  </section>
+  </section> -->
 
   <section id="prevencion" class="prevenir-corona">
     <div class="container-corona">
-      <h3><b>Prevenir es simple</b></h3>
-      <h2>El <i>Dr. Humberto Vásquez</i> de la Clínica Internacional nos ayuda a <b>romper mitos.</b></h2>
+      <div class="prevenir-corona__titleImg">
+        <div class="text">
+          <h3>Descuida, <span>tu seguro</span> <b>RIMAC sí te cubre.</b></h3>
+          <p>Si tienes un Seguro de Salud, plan EPS o Seguro de Vida, cuentas con cobertura ante el COVID-19 según tu póliza.</p>
+        </div>
+        <div class="img">
+          <img src="./img/img-coverage.svg" alt="">
+        </div>
+      </div>
+    
       <div class="prevenir-corona__video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/3uhqK8zDJ1k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="img">
+          <img src="./img/video/doctor-img.jpg" alt="">
+        </div>
+        <div class="text">
+          <h4>El Dr. Martín Alor, resuelve las dudas de nuestros clientes de Salud y EPS</h4>
+          <button class="text__btn-video">VER VIDEO</button>
+        </div>
+        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/3uhqK8zDJ1k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
       </div>
       <h3>Otras recomendaciones <b>importantes</b></h3>
       <div class="corona-dropdown first" data-parent="Síntomas">

@@ -1,0 +1,183 @@
+.header-cards-corona {
+  .container-corona {
+    @include media(desktopmini) {
+      max-width: 800px;
+    }
+    @include media(desktop) {
+      max-width: 800px;
+    }
+    h2 {
+      font-weight: 300;
+      margin-top: 104px;
+      //Descomentar cuando pases AEM margin-top: 48px;
+      margin-bottom: 16px;
+      color: $gray;
+      font-family: $lato;
+      font-size: 36px;
+      line-height: 48px;
+      @include media(tablet) {
+        font-size: 40px;
+        line-height: 48px;
+        text-align: center;
+        margin-top: 80px;
+      }
+      span {
+        font-weight: 400;
+        color: $red;
+      }
+      b {
+        font-weight: 400;
+        display: block;
+        @include media(tablet) {
+          display: inline;
+        }
+      }
+    }
+    p {
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 32px;
+      color: $gray2;
+      @include media(tablet) {
+        text-align: center;
+      }
+    }
+  }
+  &__cards {
+    display: flex;
+    flex-flow: wrap;
+    margin-top: 40px;
+    @include media(tablet) {
+      margin-top: 48px;
+    }
+    &__card {
+      border: 3px solid #f0f2fa;
+      border-radius: 12px;
+      width: 100%;
+      display: flex;
+      flex-flow: wrap;
+      overflow: hidden;
+      margin-bottom: 16px;
+      @include media(desktopmini) {
+        width: col(12, 25);
+        margin-right: col(1, 25);
+        margin-bottom: 0px;
+      }
+      &:last-child {
+        margin-right: 0px;
+      }
+      .text {
+        width: col(18, 37);
+        margin-right: 16px;
+        margin-left: calc(8.1081081081% - 3px);
+        margin-top: 29px;
+        margin-bottom: 29px;
+        @include media(desktopmini) {
+          width: col(6, 12);
+          margin-top: 40px;
+          margin-bottom: 38px;
+          margin-right: 32px;
+          margin-left: 30px;
+          max-width: 100%;
+        }
+        h4 {
+          font-weight: 400;
+          font-family: $lato;
+          color: $gray2;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: 0.2px;
+          @include media(desktopmini) {
+            font-size: 20px;
+            line-height: 28px;
+          }
+        }
+        p,
+        span {
+          font-size: 14px;
+          line-height: 24px;
+          color: $gray2;
+          font-weight: 300;
+          text-align: left;
+          margin-top: 4px;
+          margin-bottom: 16px;
+        }
+        p {
+          display: none;
+          @include media(desktopmini) {
+            display: block;
+          }
+        }
+        span {
+          display: block;
+          @include media(desktopmini) {
+            display: none;
+          }
+        }
+        a {
+          border-radius: 8px;
+          background-color: $red;
+          color: white;
+          text-transform: uppercase;
+          font-size: 12px;
+          line-height: 16px;
+          text-align: center;
+          display: inline-block;
+          letter-spacing: 0.8px;
+          -webkit-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          -ms-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+          padding: 8px 16px;
+          @include media(desktopmini) {
+            padding: 12px 16px;
+          }
+          &:hover {
+            background: $red2;
+            box-shadow: 0px 4px 10px rgba(239, 51, 64, 0.24);
+          }
+        }
+      }
+      .image {
+        width: 88px;
+        padding-top: 32px;
+        @include media(desktopmini) {
+          width: col(4, 12);
+          padding-top: 0px;
+        }
+        &__deskt {
+          display: none;
+          @include media(tablet) {
+            display: block;
+          }
+        }
+        &__mob {
+          @include media(tablet) {
+            display: none;
+          }
+        }
+
+        img {
+          position: relative;
+          bottom: -3px;
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      &:last-child {
+        a {
+          border: 1px solid $red;
+          color: $red;
+          background-color: white;
+          &:hover {
+            background-color: transparent;
+            box-shadow: none;
+            border: 2px solid $red;
+          }
+        }
+      }
+    }
+  }
+}

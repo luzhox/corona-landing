@@ -10,6 +10,15 @@
         'slow');
     }
    })
+   $(window).scroll(function() {
+    if($(window).scrollTop()>70){
+      console.log('aparece menu')
+      $('.custom-menu-page').addClass('active')
+    }else{
+      $('.custom-menu-page').removeClass('active')
+
+    }
+   })
 
   if (window.matchMedia("(min-width: 1024px)").matches) {
     $('.custom-menu-page__btn').hover(function(e){
@@ -176,4 +185,12 @@ console.log($(this).parent().parent().data('parent'))
       event:"trackAction"
      });
   }
+})
+
+$('.returnToTop').click(function(){
+  console.log()
+  $('html,body').animate({
+        scrollTop: 0},
+        'slow');
+    
 })
