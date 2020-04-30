@@ -4801,6 +4801,94 @@ button {
   }
 }
 
+.corona-micuenta {
+  background-color: #F7F8FC;
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+@media only screen and (min-width: 768px) {
+  .corona-micuenta {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+@media only screen and (min-width: 1360px) {
+  .corona-micuenta .container-corona {
+    max-width: 800px;
+  }
+}
+.corona-micuenta .container-corona .text-button {
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+}
+@media only screen and (min-width: 1360px) {
+  .corona-micuenta .container-corona .text-button__text {
+    margin-right: 96px;
+  }
+}
+.corona-micuenta .container-corona .text-button__text h3 {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  font-family: "Lato", Arial, sans-serif;
+  color: #494F66;
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .corona-micuenta .container-corona .text-button__text h3 {
+    display: block;
+  }
+}
+.corona-micuenta .container-corona .text-button__text h4 {
+  color: #494F66;
+  font-weight: 300;
+  margin-top: 16px;
+  margin-bottom: 24px;
+  font-size: 24px;
+  line-height: 32px;
+}
+@media only screen and (min-width: 1024px) {
+  .corona-micuenta .container-corona .text-button__text h4 {
+    margin-bottom: 0px;
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+.corona-micuenta .container-corona .text-button__btn a {
+  width: auto;
+  padding: 14px 16px;
+}
+.corona-micuenta .container-corona .text-button__btn a.btn__primary {
+  margin-right: 16px;
+}
+@media only screen and (min-width: 1024px) {
+  .corona-micuenta .container-corona .text-button__btn a {
+    padding: 16px 32px;
+  }
+  .corona-micuenta .container-corona .text-button__btn a.btn__primary {
+    margin-right: 24px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .corona-micuenta .container-corona .line-divider {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+.corona-micuenta .container-corona .tooltext p {
+  font-weight: 300;
+  color: #494F66;
+  font-size: 16px;
+  line-height: 28px;
+  font-family: "Roboto", sans-serif;
+}
+.corona-micuenta .container-corona .tooltext p a {
+  font-weight: 400;
+  color: #6F7DFF;
+  text-decoration: underline;
+}
+
 .rimac-header-public {
   height: 56px;
   width: 100%;

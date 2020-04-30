@@ -1,0 +1,83 @@
+.corona-micuenta {
+  background-color: $gray7;
+  padding-top: 56px;
+  padding-bottom: 56px;
+  @include media(tablet) {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  .container-corona {
+    @include media(desktop) {
+      max-width: 800px;
+    }
+    .text-button {
+      display: flex;
+      flex-flow: wrap;
+      align-items: center;
+      &__text {
+        @include media(desktop) {
+          margin-right: 96px;
+        }
+        h3 {
+          font-size: 20px;
+          line-height: 28px;
+          font-weight: 400;
+          font-family: $lato;
+          color: $gray;
+          display: none;
+          @include media(tablet) {
+            display: block;
+          }
+        }
+        h4 {
+          color: $gray;
+          font-weight: 300;
+          margin-top: 16px;
+          margin-bottom: 24px;
+          font-size: 24px;
+          line-height: 32px;
+          @include media(desktopmini) {
+            margin-bottom: 0px;
+            font-size: 28px;
+            line-height: 36px;
+          }
+        }
+      }
+      &__btn {
+        a {
+          width: auto;
+          padding: 14px 16px;
+          &.btn__primary {
+            margin-right: 16px;
+          }
+          @include media(desktopmini) {
+            padding: 16px 32px;
+            &.btn__primary {
+              margin-right: 24px;
+            }
+          }
+        }
+      }
+    }
+    .line-divider {
+      @include media(mobile) {
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+    }
+    .tooltext {
+      p {
+        font-weight: 300;
+        color: $gray;
+        font-size: 16px;
+        line-height: 28px;
+        font-family: $roboto;
+        a {
+          font-weight: 400;
+          color: $acian2;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
