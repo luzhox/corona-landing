@@ -55,17 +55,25 @@
     display: flex;
     align-items: center;
     flex-flow: wrap;
+    background-color: white;
     margin-bottom: 56px;
     @include media(tablet) {
+      margin-bottom: 64px;
+    }
+    @include media(desktopmini) {
       margin-top: 64px;
       margin-bottom: 80px;
     }
     .text {
       text-align: center;
+      @include media(tablet) {
+        width: col(19, 37);
+        margin-left: col(2, 37);
+        text-align: left;
+      }
       @include media(desktopmini) {
         width: col(15, 25);
         margin-left: col(2, 25);
-        text-align: left;
       }
       h4 {
         font-weight: 300;
@@ -78,6 +86,11 @@
         margin-right: auto;
         margin-top: 40px;
         @include media(tablet) {
+          text-align: left;
+          margin: 0;
+          width: 100%;
+        }
+        @include media(desktopmini) {
           width: 100%;
           text-align: left;
           font-size: 28px;
@@ -105,6 +118,8 @@
         @include media(tablet) {
           width: auto;
           margin-bottom: 0px;
+          margin-left: 0px;
+          display: inline-block;
         }
         &::before {
           content: "";
@@ -121,16 +136,19 @@
     }
     .img {
       height: 180px;
+      @include media(tablet) {
+        width: col(14, 37);
+        height: 234px;
+      }
       @include media(desktopmini) {
         overflow: hidden;
         width: col(7, 25);
-        height: 234px;
       }
       img {
         object-fit: cover;
         height: 180px;
         width: 100%;
-        @include media(desktopmini) {
+        @include media(tablet) {
           width: 100%;
 
           height: 234px;
@@ -160,7 +178,6 @@
       }
       h3 {
         font-weight: 300;
-
         letter-spacing: -0.6px;
         color: $gray;
         margin-bottom: 16px;

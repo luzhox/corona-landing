@@ -3109,7 +3109,6 @@ button {
 }
 .servicios-corona__item .link {
   position: relative;
-  margin-bottom: 37px;
 }
 .servicios-corona__item .link::after {
   content: "";
@@ -3178,12 +3177,12 @@ button {
 }
 @media only screen and (min-width: 1024px) {
   .servicios-corona__item {
-    width: 27.2727272727%;
-    margin-right: 9.0909090909%;
+    width: 240px;
+    margin-right: 34px;
     padding: 29px 27px;
     margin-bottom: 32px;
     letter-spacing: 0.2px;
-    height: 216px;
+    height: 240px;
   }
 }
 @media only screen and (min-width: 1360px) {
@@ -3247,8 +3246,8 @@ button {
   text-align: center;
   display: flex;
   align-items: center;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 16px;
   color: #6F7DFF;
   border: 0px;
   -webkit-appearance: none;
@@ -3257,10 +3256,14 @@ button {
   margin-left: auto;
   margin-right: auto;
   margin-top: 8px;
+  text-transform: uppercase;
 }
 .servicios-corona__btn p {
   font-weight: 400;
   font-family: "Lato", Arial, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.6px;
 }
 .servicios-corona__btn p.hide {
   display: none;
@@ -3973,9 +3976,15 @@ button {
   display: flex;
   align-items: center;
   flex-flow: wrap;
+  background-color: white;
   margin-bottom: 56px;
 }
 @media only screen and (min-width: 768px) {
+  .prevenir-corona__video {
+    margin-bottom: 64px;
+  }
+}
+@media only screen and (min-width: 1024px) {
   .prevenir-corona__video {
     margin-top: 64px;
     margin-bottom: 80px;
@@ -3984,11 +3993,17 @@ button {
 .prevenir-corona__video .text {
   text-align: center;
 }
+@media only screen and (min-width: 768px) {
+  .prevenir-corona__video .text {
+    width: 51.3513513514%;
+    margin-left: 5.4054054054%;
+    text-align: left;
+  }
+}
 @media only screen and (min-width: 1024px) {
   .prevenir-corona__video .text {
     width: 60%;
     margin-left: 8%;
-    text-align: left;
   }
 }
 .prevenir-corona__video .text h4 {
@@ -4003,6 +4018,13 @@ button {
   margin-top: 40px;
 }
 @media only screen and (min-width: 768px) {
+  .prevenir-corona__video .text h4 {
+    text-align: left;
+    margin: 0;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1024px) {
   .prevenir-corona__video .text h4 {
     width: 100%;
     text-align: left;
@@ -4033,6 +4055,8 @@ button {
   .prevenir-corona__video .text button {
     width: auto;
     margin-bottom: 0px;
+    margin-left: 0px;
+    display: inline-block;
   }
 }
 .prevenir-corona__video .text button::before {
@@ -4049,11 +4073,16 @@ button {
 .prevenir-corona__video .img {
   height: 180px;
 }
+@media only screen and (min-width: 768px) {
+  .prevenir-corona__video .img {
+    width: 37.8378378378%;
+    height: 234px;
+  }
+}
 @media only screen and (min-width: 1024px) {
   .prevenir-corona__video .img {
     overflow: hidden;
     width: 28%;
-    height: 234px;
   }
 }
 .prevenir-corona__video .img img {
@@ -4061,7 +4090,7 @@ button {
   height: 180px;
   width: 100%;
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .prevenir-corona__video .img img {
     width: 100%;
     height: 234px;
@@ -4486,6 +4515,9 @@ button {
   }
 }
 
+.header-cards-corona .container-corona {
+  overflow: hidden;
+}
 @media only screen and (min-width: 1024px) {
   .header-cards-corona .container-corona {
     max-width: 800px;
@@ -4509,6 +4541,10 @@ button {
   .header-cards-corona .container-corona h2 {
     font-size: 40px;
     line-height: 48px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .header-cards-corona .container-corona h2 {
     text-align: center;
     margin-top: 80px;
   }
@@ -4532,7 +4568,7 @@ button {
   line-height: 32px;
   color: #676F8F;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .header-cards-corona .container-corona p {
     text-align: center;
   }
@@ -4544,6 +4580,15 @@ button {
 }
 @media only screen and (min-width: 768px) {
   .header-cards-corona__cards {
+    width: 180%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .header-cards-corona__cards {
+    width: auto;
+    overflow: initial;
     margin-top: 48px;
   }
 }
@@ -4556,11 +4601,20 @@ button {
   overflow: hidden;
   margin-bottom: 16px;
 }
+@media only screen and (min-width: 768px) {
+  .header-cards-corona__cards__card {
+    width: auto;
+    margin-right: 32px;
+    margin-bottom: 0px;
+    max-width: 384px;
+  }
+}
 @media only screen and (min-width: 1024px) {
   .header-cards-corona__cards__card {
     width: 48%;
     margin-right: 4%;
     margin-bottom: 0px;
+    max-width: 100%;
   }
 }
 .header-cards-corona__cards__card:last-child {
@@ -4591,7 +4645,7 @@ button {
   line-height: 24px;
   letter-spacing: 0.2px;
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .header-cards-corona__cards__card .text h4 {
     font-size: 20px;
     line-height: 28px;
@@ -4640,7 +4694,7 @@ button {
   transition: all 0.3s ease-in-out;
   padding: 8px 16px;
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .header-cards-corona__cards__card .text a {
     padding: 12px 16px;
   }
@@ -4652,6 +4706,13 @@ button {
 .header-cards-corona__cards__card .image {
   width: 88px;
   padding-top: 32px;
+}
+@media only screen and (min-width: 768px) {
+  .header-cards-corona__cards__card .image {
+    width: 33.3333333333%;
+    max-width: 128px;
+    padding-top: 0px;
+  }
 }
 @media only screen and (min-width: 1024px) {
   .header-cards-corona__cards__card .image {
@@ -4687,6 +4748,57 @@ button {
   background-color: transparent;
   box-shadow: none;
   border: 2px solid #EF3340;
+}
+.header-cards-corona__cards__card .tag {
+  display: none;
+}
+.header-cards-corona__cards__card.new .text {
+  margin-top: 29px;
+  margin-bottom: 37px;
+}
+.header-cards-corona__cards__card.new .image {
+  display: flex;
+  align-items: flex-end;
+}
+.header-cards-corona__cards__card.new .tag {
+  display: inline-block;
+  font-size: 10px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.8px;
+  padding: 2px 8px;
+  margin-top: 0px;
+  margin-bottom: 16px;
+  background-color: #83CC5E;
+  color: white;
+  border-radius: 20px;
+  font-weight: 500;
+  font-family: "Lato", Arial, sans-serif;
+}
+.header-cards-corona-container::-webkit-scrollbar {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .header-cards-corona-container {
+    overflow-x: scroll;
+  }
+  .header-cards-corona-container::-webkit-scrollbar {
+    display: none;
+  }
+  .header-cards-corona-container .container-corona {
+    overflow-x: scroll;
+  }
+  .header-cards-corona-container .container-corona::-webkit-scrollbar {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .header-cards-corona-container {
+    overflow: initial;
+  }
+  .header-cards-corona-container .container-corona {
+    overflow: initial;
+  }
 }
 
 .rimac-header-public {
