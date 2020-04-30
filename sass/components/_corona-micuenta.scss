@@ -15,9 +15,10 @@
       flex-flow: wrap;
       align-items: center;
       &__text {
-        @include media(desktop) {
+        @media only screen and (min-width: 1200px) {
           margin-right: 96px;
         }
+
         h3 {
           font-size: 20px;
           line-height: 28px;

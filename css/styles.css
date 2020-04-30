@@ -4169,6 +4169,10 @@ button {
   }
 }
 
+.modal-corona-video {
+  display: none;
+}
+
 .corona-dropdown {
   border-bottom: 1px solid #E4E8F7;
   cursor: pointer;
@@ -4822,7 +4826,7 @@ button {
   flex-flow: wrap;
   align-items: center;
 }
-@media only screen and (min-width: 1360px) {
+@media only screen and (min-width: 1200px) {
   .corona-micuenta .container-corona .text-button__text {
     margin-right: 96px;
   }
