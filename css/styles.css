@@ -3044,7 +3044,7 @@ button {
 .servicios-corona h3 b {
   font-weight: 400;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1360px) {
   .servicios-corona h3 {
     font-size: 28px;
     line-height: 36px;
@@ -3104,6 +3104,7 @@ button {
   transition: all 0.3s ease-in-out;
 }
 .servicios-corona__item:hover {
+  border-color: white;
   box-shadow: 0px 8px 30px rgba(20, 43, 127, 0.1), 0px 1px 4px rgba(163, 171, 204, 0.06);
 }
 .servicios-corona__item .link {
@@ -3160,7 +3161,7 @@ button {
   line-height: 24px;
   letter-spacing: 0.2px;
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1360px) {
   .servicios-corona__item p {
     font-size: 20px;
     line-height: 28px;

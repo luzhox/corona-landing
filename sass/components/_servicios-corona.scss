@@ -47,7 +47,8 @@
     b {
       font-weight: 400;
     }
-    @include media(tablet) {
+
+    @include media(desktop) {
       font-size: 28px;
       line-height: 36px;
       margin-bottom: 48px;
@@ -105,6 +106,7 @@
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     &:hover {
+      border-color: white;
       box-shadow: 0px 8px 30px rgba(20, 43, 127, 0.1), 0px 1px 4px rgba(163, 171, 204, 0.06);
     }
     .link {
@@ -158,7 +160,7 @@
       font-size: 16px;
       line-height: 24px;
       letter-spacing: 0.2px;
-      @include media(desktopmini) {
+      @include media(desktop) {
         font-size: 20px;
         line-height: 28px;
         letter-spacing: 0px;
