@@ -217,9 +217,15 @@ $(window).scroll(function() {
 
 $('.text__btn-video').click(function(){
   $('.modal-corona-video').addClass('active')
+  var videoURL = $('#videoDoctor').prop('src');
+videoURL +="?autoplay=1";
+$('#videoDoctor').prop('src',videoURL);
 })
 
 $('.overlay-video').click(function(){
   $('.modal-corona-video').removeClass('active')
-
+  var videoURL = $('#videoDoctor').prop('src');
+  videoURL = videoURL.replace("?autoplay=1", "");
+  $('#videoDoctor').prop('src','');
+  $('#videoDoctor').prop('src',videoURL);
 })

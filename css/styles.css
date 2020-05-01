@@ -4207,11 +4207,17 @@ button {
   padding-bottom: 56.25%;
   overflow: hidden;
 }
+@media only screen and (min-width: 1024px) {
+  .modal-corona-video .modal-content {
+    width: 100%;
+  }
+}
 .modal-corona-video .modal-content iframe {
   border-radius: 16px;
   border: 2px solid white;
   height: 400px;
   width: 100%;
+  overflow: hidden;
 }
 .modal-corona-video .overlay {
   top: 0;
