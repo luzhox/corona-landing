@@ -4885,7 +4885,7 @@ button {
     padding-bottom: 64px;
   }
 }
-@media only screen and (min-width: 1360px) {
+@media only screen and (min-width: 1024px) {
   .corona-micuenta .container-corona {
     max-width: 800px;
   }

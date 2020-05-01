@@ -7,7 +7,7 @@
     padding-bottom: 64px;
   }
   .container-corona {
-    @include media(desktop) {
+    @include media(desktopmini) {
       max-width: 800px;
     }
     .text-button {
