@@ -207,10 +207,11 @@ $(window).scroll(function() {
     if (sectionOffset <= scrollbarLocation) {
       $(this).addClass('active')
       var bar = document.getElementsByClassName('bar')[0]
-      console.log('ancho',custom.clientWidth)
-   bar.style.width = custom.clientWidth + 'px'
-    bar.style.left =$(this).position().left + 'px'
+      bar.style.width = custom.clientWidth + 'px'
+      bar.style.left =$(this).position().left + 'px'
       $(this).siblings().removeClass('active')
+     
+     
     }
   })
 })
