@@ -4218,6 +4218,7 @@ button {
   height: 400px;
   width: 100%;
   overflow: hidden;
+  background-color: white;
 }
 .modal-corona-video .overlay {
   top: 0;
