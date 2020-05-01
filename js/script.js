@@ -214,3 +214,12 @@ $(window).scroll(function() {
     }
   })
 })
+
+$('.text__btn-video').click(function(){
+  $('.modal-corona-video').addClass('active')
+})
+
+$('.overlay-video').click(function(){
+  $('.modal-corona-video').removeClass('active')
+
+})
